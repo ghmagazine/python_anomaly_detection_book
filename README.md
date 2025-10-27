@@ -190,9 +190,7 @@ flowchart LR;
 
 ## ソースコード
 
-[環境構築方法]()
-
-本文中で解説したソースコード
+本文中で解説したソースコードの一覧を以下の表に記載しています。[使用方法はこちらを参照してください](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/README.md)
 
 |章|手法名とソースコードへのリンク|書籍中のページ|
 |---|---|---|
