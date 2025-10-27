@@ -4,70 +4,65 @@
 
 本書のサンプルコードを動作させるために必要な環境構築方法を、OSごとに記載します。
 
-- [Windows（非プロキシ環境）]()
-- [Windows（プロキシ環境）]()
-- [Mac]()
+- [Windows](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/README.md#windows)
+- [Mac](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/README.md#mac)
 - [Linux（Ubuntu等のDebian系）]()
 
 ### Windows
 
-以下の環境を想定して環境構築します。
+以下の条件を想定して環境構築します。
 
 - OSのバージョン：Windows10またはWindows11
 - Pythonのバージョン：3.10以降
-- パッケージ管理ツール：conda（conda-forgeリポジトリ）
-- プロキシ：なし
+- パッケージ管理システム：conda（Miniforge）
 
-なお、パッケージ管理ツールにcondaを使用する理由として、Windows環境では[PyMCのインストールにcondaが推奨されており]()、pipやuvを使用する場合は自分でC++コンパイラ等をインストールする必要が生じるため、2025年10月時点ではインストールが簡単なcondaの利用を推奨します。
+なお、パッケージ管理にcondaを使用する理由として、Windows環境では[PyMCのインストールにcondaが推奨されており](https://www.pymc.io/projects/docs/en/stable/installation.html)、pipやuvを使用する場合は自分でC++コンパイラ等をインストールしてビルドする必要が生じるため、2025年10月時点ではインストールが簡単なcondaの利用がおすすめです。
 
 #### Gitのインストール
 
-[Git]()は、ソースコードの変更履歴を記録・追跡するための分散型バージョン管理システムです。
+[Git](https://git-scm.com/)は、ソースコードの変更履歴を記録・追跡するための分散型バージョン管理システムです。
 ここではサポートサイト（Githubリポジトリ）からコードをダウンロード（Clone）するために使用します。
 
-WindowsでGitをインストールする）には（[公式手順](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)に準拠）、[こちらの公式サイト](https://git-scm.com/install/windows)の`Click here to download`をクリックして、インストーラのexeファイルをダウンロードしてダブルクリックで実行します。
+WindowsでGitをインストールするには（[公式手順](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)に準拠）、[こちらの公式サイト](https://git-scm.com/install/windows)の`Click here to download`をクリックして、インストーラのexeファイルをダウンロードしてダブルクリックで実行します。
 
 インストーラを実行するとインストール用のウィンドウが開くので、デフォルト設定のまま`Next`を押し続けると、インストールが始まります。
 
-インストールが完了したら、エクスプローラの任意のフォルダを右クリックして、`Git Bash Here`と表示されていれば成功です（クリックするとGitのコマンドライン操作用のコンソールが開きます）。
+インストールが完了したら、エクスプローラの任意のフォルダを右クリックして、`Git Bash Here`と表示されていれば成功です（クリックするとGitのコマンドライン操作用のターミナルが開きます）。
 
-#### Pythonのインストール
+初回起動時は`Git Bash Here`で開いたターミナルから、以下コマンドでユーザ名とメールアドレスを登録しておきます。
 
-**uvを使用する（pipを使用しない）場合はこの作業は不要です**
-
-WindowsにPythonをインストールするには、[公式のダウンロードページ](https://www.python.org/downloads/windows/)からダウンロードしたいバージョンのPythonを探し、`Download Windows installer (64-bit)`をクリックしてexeファイルをダウンロードします。
-
-exeファイルを開いたら表示される`Install Now`を押し、指示に従って進めばインストールできます。
-
-以下コマンドで、`-V:3.12 * C:\Users\ユーザー名\AppData\Local\Programs\Python\Python312\python.exe`のように表示されたらインストール成功です。
-
-```
-py -0p
+```bash
+git config --global user.name "好きな名前"
+git config --global user.email "好きなメールアドレス"
 ```
 
-インストールに失敗したら、
+#### conda（Miniforge）のインストール
 
-#### uvのインストール
+condaはPythonのパッケージ管理システムの一種です。Pythonのパッケージ管理システムは他にもpipやuv等が存在しますが、前述のようにPyMCのインストールを簡略化するため、ここではcondaを使用します。
+Miniforgeは、condaによるパッケージ管理環境を、無償で使用できるconda-forgeリポジトリと紐付けて構築するツールです。
 
-**uvを使用しない（pipをパッケージ管理に使用する）場合はこの作業は不要です**
+[こちらのMiniforgeのGitHub](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows)から、`the Windows installer`と書いたリンクをクリックすることで、Miniforgeインストーラexeファイルをダウンロードできます。
 
-[uv](https://docs.astral.sh/uv/)は、Pythonのパッケージ管理ツールのひとつです。Pythonデフォルトのパッケージ管理システムであるpipや、デフォルトの仮想環境管理ツールであるvenvと近い操作感を維持したまま、高速動作やプラットフォームへの依存性を下げる工夫を実現しています。
+ダウンロードしたインストーラをダブルクリックして指示の通りにインストールを進めます。
+インストールが完了したら、miniforgeがインストールされているフォルダの場所（`conda.exe`があるフォルダ）を確認します。デフォルトでは`C:\Users\ユーザー名\miniforge3\Scripts`または`C:\ProgramData\miniforge3\Scripts`フォルダにインストールされているはずです。
 
-Windowsにuvをインストールするには、PowerShellを開いて以下のコマンドを実行します（[公式インストール手順](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer)に準拠）。
+Windows画面下の検索窓に「環境変数」と打つと出てくる「環境変数を編集」画面に入り、「システム環境変数」→「Path」をダブルクリック→「新規」で出てくる欄に、先ほど確認したインストールフォルダ（デフォルトでは`C:\Users\ユーザー名\miniforge3\Scripts`または`C:\ProgramData\miniforge3\Scripts`）を入力し、「OK」を押してパスを通します。
 
-```powershell
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+PowerShellを開き、以下コマンドでシェルの初期設定をします
+
+```shell
+conda init
 ```
 
-インストールが完了したら、PowerShellを一度閉じてから開きなおして、以下コマンドで`success`と出ればインストール成功です。
+以下コマンドを実行して`base`環境が表示されれば、インストールとパス設定が成功しています。
 
-```powershell
-uv self update
+```shell
+conda env list
 ```
 
 #### VSCodeのインストール
 
-VSCodeは高機能なエディタで、Python等の
+VSCodeは高機能なエディタで、Pythonのようなプログラミング言語を開発・デバッグするために用いられます。
 
 WindowsにVSCodeをインストールするには、[公式のダウンロードページ](https://code.visualstudio.com/download)から`Windows`をクリックしてexeファイルをダウンロードします。
 
@@ -89,143 +84,156 @@ WindowsにVSCodeをインストールするには、[公式のダウンロード
 git clone https://github.com/ghmagazine/python_anomaly_detection_book.git
 ```
 
-`python_anomaly_detection_book`というフォルダができており、内部にサンプルコード等が格納されていればクローン成功です。
+`python_anomaly_detection_book`というフォルダができて、内部にサンプルコード等が格納されていればクローン成功です。
 
 #### VSCodeでリポジトリを開く
 
-VSCodeを起動し、左上のメニューの`File`→`Open Folder`をクリックし、先ほどクローンしたフォルダを選択して開きます。
+VSCodeを起動し、左上のメニューの`File`→`Open Folder`をクリックし、先ほどクローンした`python_anomaly_detection_book`フォルダを選択して開きます。
 フォルダを開いてターミナルが表示されていなければ、左上のメニューの`Terminal`→`New Terminal`をクリックします。
 
-#### 必要ライブラリのインストール
+#### 仮想環境の作成とライブラリのインストール
 
-Pythonの仮想環境を作成し、NumPyやPyMC等の必要ライブラリをインストールしていきます。pipを使う場合とuvを使う場合に分けて解説します。
+Pythonの仮想環境を作成し、NumPyやPyMC等の必要ライブラリをインストールしていきます。
 
-##### pipによるインストール
-
-**uvを使用する（pipを使用しない）場合はこの作業は不要です**
-
-まずはライブラリをインストールするための仮想環境（venv）を作成します。
-先ほどVSCodeでリポジトリを開いてから起動したターミナルから、以下コマンドで`.venv`という名前の仮想環境を作成します。
+まず先ほど開いたVSCodeのターミナルから以下コマンドを打ち、`environment_windows.yml`の記載内容に基づきライブラリがインストールされた、`anomaly_detection`という名前のcondaの仮想環境を作成します。
 
 ```shell
-py -m venv .venv
+conda env create -f environment_windows.yml
 ```
 
-以下コマンドで仮想環境をアクティベートします。
+以下コマンドで、作成した仮想環境をアクティベートしてください（うまくいかない場合はターミナルを一度閉じて開き直してください）
 
 ```shell
-.venv/Scripts/activate.ps1
+conda activate anomaly_detection
 ```
 
-※「このシステムではスクリプトの実行が無効になっているため、‥を読み込むことができません」というようなエラーが出た場合、以下コマンドでスクリプトの実行を有効化します
+ターミナルの左に`(anomaly_detection)`のように表示されればアクティベート成功です。
+
+##### ※`environment_windows.yml`から作成した仮想環境がうまく動作しない場合
+
+上記で作成された仮想環境でうまく動作しない場合、[PyMC公式のインストール手順に基づき](https://www.pymc.io/projects/docs/en/stable/installation.html)以下のように一から仮想環境を作成してください
 
 ```shell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+conda create -n anomaly_detection "pymc>=5"
 ```
 
-以下コマンドで、`requirements.txt`に記載されたライブラリ（NumPy、scikit-learn等）を一括インストールします。
-
 ```shell
-py -m pip install -r requirements.txt
-```
-
-##### uvによるインストール
-
-**uvを使用しない（pipをパッケージ管理に使用する）場合はこの作業は不要です**
-
-以下コマンドで、`pyproject.toml`に記載されたライブラリ（NumPy、scikit-learn等）を一括インストールします。
-
-```shell
-uv sync
+conda activate anomaly_detection
+conda install jupyter
+conda install seaborn
+conda install scikit-learn
 ```
 
 #### 動作確認
 
-クローンしたリポジトリ内の任意のJupyterファイル（例：`notebooks/ch2_3&4_EDA.ipynb`）を開き、最初のコードセルの左側にある`▷`ボタンを押してコードを実行します。
-最初の1回のみPythonの実行環境の選択が求められるので、`Python Envifonments`→`.venv`（先ほど作成した仮想環境）と選択します。
+クローンしたリポジトリ内の任意のJupyterファイル（例：`notebooks/ch8_4_Bayesian_Linear_Regression.ipynb`）を開き、最初のコードセルの左側にある`▷`ボタンを押してコードを実行します。
+最初の1回のみPythonの実行環境の選択が求められるので、`Python Envifonments`→`anomaly_detection`（先ほど作成した仮想環境）と選択します。
 
 エラーなしで実行できれば成功です。
 
 ## Mac
 
+以下の条件を想定して環境構築します。
+
 - OSのバージョン：MacOS 15 (Sequoia)以降
 - Pythonのバージョン：3.10以降
-- パッケージ管理ツール：Conda（Miniforge）
+- パッケージ管理ツール：conda（Miniforge）
 
-### Miniforgeのインストール
+MacもWindowと同様、PyMCのインストールにcondaが推奨されていることや、2025年現在Macの多くで用いられているMシリーズCPUがconda＋conda-forge構成と相性が良いことから、Miniforgeを用いたパッケージ管理システムのインストールをおすすめします。
 
-Miniforgeは、condaによるパッケージ管理環境を、無償で使用できるconda-forgeリポジトリで利用するように簡単に環境構築できるツールです。
+#### Gitのインストール
 
-pipではなくcondaを利用する背景として、2025年現在Macの多くで用いられているMシリーズCPUは、WindowsやLinuxで多く用いられているx86-64アーキテクチャのCPUとは仕様が異なるため、pip（やそれをベースとしたuv等）でのライブラリインストールがうまくいかないケースが頻発していました。よってMシリーズ対応のライブラリをより簡単にインストールできるcondaをここでは利用します（pipによるMシリーズでのインストール環境は近年改善してきているため、そのうちこちらのページでもcondaの代わりにpipやuvを使う方法に移行します）。
+Macでは基本的にデフォルトでGitがインストールされているので、新たにインストールする必要はありません。
 
-[こちらのMiniforgeのGitHub](https://github.com/conda-forge/miniforge#download)から、Mシリーズ用のインストーラ (Miniforge3-MacOSX-arm64と書いたリンク)をダウンロード
+### conda（Miniforge）のインストール
 
-ターミナルから以下のコマンドでダウンロードフォルダに移動し
+[こちらのMiniforgeのGitHub](https://github.com/conda-forge/miniforge?tab=readme-ov-file#unix-like-platforms-macos-linux--wsl)の手順に基づきインストールを進めていきます。
 
-```bash
-cd ~/Downloads
-```
-
-以下のコマンドでダウンロードしたMiniforge3-MacOSX-arm64.shを実行
+ターミナルから以下コマンドでMiniforgeのインストール用スクリプトをダウンロードします。
 
 ```bash
-bash Miniforge3-MacOSX-arm64.sh
+curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 ```
 
-### Conda仮想環境作成
-
-以下コマンドでPython3.10の仮想環境を作成
+以下のコマンドでダウンロードしたMiniforge3-xxx-arm64.shを以下コマンドで実行すると、インストールが始まります。
 
 ```bash
-conda create --name py310 python=3.10
+bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
-以下コマンドで作成した仮想環境をアクティベート
+#### VSCodeのインストール
+
+MacにVSCodeをインストールする場合、Homebrew（Mac向けパッケージ管理ツール）がインストールされているのであればこれを利用すると便利です。以下コマンドでインストールできます。
+
+```zsh
+brew install visual-studio-code --cask
+```
+
+Homebrewを使用しない場合、[公式のダウンロードページ](https://code.visualstudio.com/download)から`Mac`をクリックして`Visual Studio Code.app`と名前のついたアプリケーションファイルをダウンロードします。ダウンロードしたFinderでMacの「アプリケーション」フォルダにドラッグ＆ドロップすれば、VSCodeを使用できるようになります。
+
+インストールが完了したらPCの再起動後にVSCodeを開き、左側の`Extensions`タブを開いて以下のアドオンをインストールします。
+
+- Python
+- Jupyter
+- Rainbow CSV（必須ではありませんが、CSVファイルが見やすくなります）
+
+####　本GitHubリポジトリのクローン
+
+本GitHubリポジトリ（サンプルコードを含めた一連のコードやドキュメントが格納されたフォルダ）をダウンロード（クローン）したいフォルダにターミナルで移動し、
 
 ```bash
-conda activate py310
+cd リポジトリをCloneしたいフォルダ
 ```
 
-### Condaで必要パッケージインストール
-
-以下コマンドで必要パッケージをインストール
+以下コマンドでクローンを実行します。
 
 ```bash
-conda install numpy pandas jupyter seaborn scipy scikit-learn statsmodels
+git clone https://github.com/ghmagazine/python_anomaly_detection_book.git
 ```
 
-### PyMCのインストール
+`python_anomaly_detection_book`というフォルダができて、内部にサンプルコード等が格納されていればクローン成功です。
 
-依存パッケージであるgraphvizをインストールします
+#### VSCodeでリポジトリを開く
 
-```bash
-conda install python-graphviz
+VSCodeを起動し、左上のメニューの`File`→`Open Folder`をクリックし、先ほどクローンした`python_anomaly_detection_book`フォルダを選択して開きます。
+フォルダを開いてターミナルが表示されていなければ、左上のメニューの`Terminal`→`New Terminal`をクリックします。
+
+#### 仮想環境の作成とライブラリのインストール
+
+Pythonの仮想環境を作成し、NumPyやPyMC等の必要ライブラリをインストールしていきます。
+
+まず先ほど開いたVSCodeのターミナルから以下コマンドを打ち、`environment_mac.yml`の記載内容に基づきライブラリがインストールされた、`anomaly_detection`という名前のcondaの仮想環境を作成します。
+
+```shell
+conda env create -f environment_mac.yml
 ```
 
-[こちらに記載](https://discourse.pymc.io/t/performance-issue-with-pymc-training-with-macbook-m1-chip/12658/8)のように、M1 Macでは特定のバージョンのPyMCがうまく動かないようなので、以下のようにバージョン指定でインストールします。
+以下コマンドで、作成した仮想環境をアクティベートしてください（うまくいかない場合はターミナルを一度閉じて開き直してください）
 
-```bash
-conda install pymc==5.7
+```shell
+conda activate anomaly_detection
 ```
 
-### PyTorchのインストール
+ターミナルの左に`(anomaly_detection)`のように表示されればアクティベート成功です。
 
-MPSを有効にするため、[こちら](https://towardsdatascience.com/gpu-acceleration-comes-to-pytorch-on-m1-macs-195c399efcc1)を参考に以下コマンドでPyTorchと関連パッケージ（TorchVision、TorchAudio）インストールします。
+##### ※`environment_mac.yml`から作成した仮想環境がうまく動作しない場合
 
-```bash
-pip3 install -U --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
+上記で作成された仮想環境でうまく動作しない場合、[PyMC公式のインストール手順に基づき](https://www.pymc.io/projects/docs/en/stable/installation.html)以下のように一から仮想環境を作成してください
+
+```shell
+conda create -n anomaly_detection "pymc>=5"
 ```
 
-### Anomalibのインストール
-
-[こちら](https://github.com/openvinotoolkit/anomalib/tree/main?tab=readme-ov-file#-installation)を参考に、以下コマンドでanomalibをインストールします
-
-```bash
-pip install anomalib
+```shell
+conda activate anomaly_detection
+conda install jupyter
+conda install seaborn
+conda install scikit-learn
 ```
 
-依存パッケージを以下コマンドでインストールします
+#### 動作確認
 
-```bash
-anomalib install -v
-```
+クローンしたリポジトリ内の任意のJupyterファイル（例：`notebooks/ch8_4_Bayesian_Linear_Regression.ipynb`）を開き、最初のコードセルの左側にある`▷`ボタンを押してコードを実行します（初回実行時は時間がかかります）。
+最初の1回のみPythonの実行環境の選択が求められるので、`Python Envifonments`→`anomaly_detection`（先ほど作成した仮想環境）と選択します。
+
+エラーなしで実行できれば成功です。
