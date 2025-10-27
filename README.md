@@ -235,6 +235,8 @@ flowchart LR;
 
 ## 付録解説
 
+**※数式が表示されないため、GitHub Pagesに移行予定**
+
 |関連する章|解説内容とリンク|関連する書籍中のページ|
 |---|---|---|
 |4章|[**ホテリング理論の異常度が従う確率分布の求め方**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/4_Normal_Distribution_Formula_List.md)|170,188ページ|
