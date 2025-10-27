@@ -9,7 +9,7 @@
 |項目|概要|
 |---|---|
 |[**異常検知アルゴリズム チートシート**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main#異常検知アルゴリズム-チートシート)|書籍に記載した手法から適切なものを選ぶためのフローチャート|
-|[**ソースコード**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main#ソースコード)|書籍中のソースコード（Jupyter）|
+|[**ソースコード**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main#ソースコード)|書籍中のソースコード（Jupyter形式）|
 |[**付録解説**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main#付録解説)|書面に掲載されていない、各種理論やアルゴリズムに関する補足解説|
 |[**正誤表**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main#正誤表)|書籍の正誤表|
 
@@ -196,40 +196,42 @@ flowchart LR;
 
 |章|手法名とソースコードへのリンク|書籍中のページ|
 |---|---|---|
-|2|[**データの可視化とEDA**]()|75ページ〜|
-|2|[**教師なし学習向けデータセット生成**]()|98ページ〜|
-|3|[**SVM**]()|110ページ〜|
-|3|[**ロジスティック回帰**]()|120ページ〜|
-|4|[**Pythonによる確率分布の実装**]()|153ページ〜|
-|4|[**1変数のホテリング理論**]()|172ページ〜|
-|4|[**1次元非正規分布**]()|195ページ|
-|5|[**二項分布の最尤推定**]()|206ページ|
-|5|[**ポアソン分布の最尤推定**]()|213ページ|
-|6|[**多変数のホテリング理論**]()|234ページ|
-|6|[**マハラノビス・タグチ法**]()|240ページ|
-|6|[**混合正規分布モデル（GMM）**]()|246ページ|
-|6|[**k-NN**]()|254ページ|
-|7|[**統計モデリング向けデータセット生成**]()|265ページ|
-|7|[**入出力があるデータの可視化**]()|265ページ|
-|7|[**1変数線形回帰モデル**]()|280ページ|
-|7|[**多変数線形回帰モデル**]()|287ページ|
-|7|[**リッジ回帰モデル**]()|296ページ|
-|7|[**ガンマ回帰（非正規GLM）モデル**]()|301ページ|
-|8|[**ベイズ線形回帰モデル**]()|334ページ|
-|8|[**二項ロジスティック回帰モデル**]()|352ページ|
-|8|[**ランダム効果を含む二項ロジスティック回帰モデル**]()||
-|9|[**各種前処理**]()||
-|9|[**評価指標の算出**]()||
-|9|[**交差検証**]()||
+|2|[**データの可視化とEDA**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch2_3%264_EDA.ipynb)|75ページ〜|
+|2|[**教師なし学習向けデータセット生成**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch2_5_Create_Dataset.ipynb)|98ページ〜|
+|3|[**SVM**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch3_3_SVM.ipynb)|110ページ〜|
+|3|[**ロジスティック回帰**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch3_4_Logistic_Regression.ipynb)|120ページ〜|
+|4|[**Pythonによる確率分布の実装**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_3_Probability_Distribution.ipynb)|153ページ〜|
+|4|[**1変数のホテリング理論**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_4%265_Hotelling_Anomaly_Detection.ipynb)|172ページ〜|
+|4|[**1次元非正規分布**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_6_Non-Normal_Anomaly_Detection.ipynb)|195ページ〜|
+|5|[**二項分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_3_Binomial_Anomaly_Detection.ipynb)|206ページ〜|
+|5|[**ポアソン分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_4_Poisson_Anomaly_Detection.ipynb)|213ページ〜|
+|6|[**多変数のホテリング理論**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_3_Multivariate_Hotteling.ipynb)|234ページ〜|
+|6|[**マハラノビス・タグチ法**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_4_Mahalanobis_Taguchi.ipynb)|240ページ〜|
+|6|[**混合正規分布モデル（GMM）**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_5_GMM_Anomaly_Detection.ipynb)|246ページ〜|
+|6|[**k-NN**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_6_kNN_Anomaly_Detection.ipynb)|254ページ〜|
+|7|[**統計モデリング向けデータセット生成**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch7_2_Create_Dataset.ipynb)|265ページ〜|
+|7|[**入出力があるデータの可視化**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch7_2_Visualize_Regression_Data.ipynb)|272ページ〜|
+|7|[**1変数線形回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch7_3_Linear_Regression_Anomaly_Detection.ipynb)|280ページ〜|
+|7|[**多変数線形回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch7_4_Multivariate_Linear_Regression.ipynb)|287ページ〜|
+|7|[**リッジ回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch7_5_Ridge_Regression.ipynb)|296ページ〜|
+|7|[**ガンマ回帰（非正規GLM）モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch7_6_Gamma_Regression.ipynb)|301ページ〜|
+|8|[**ベイズ線形回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_4_Bayesian_Linear_Regression.ipynb)|334ページ〜|
+|8|[**二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_5_Binomial_Logistic_Regression.ipynb)|350ページ〜|
+|8|[**ランダム効果を含む二項ロジスティック回帰モデル**]()|369ページ〜|
+|9|[**各種前処理**]()|379ページ〜|
+|9|[**評価指標の算出(ラベルの予測精度)**]()|397ページ〜|
+|9|[**評価指標の算出(統計モデル選択の妥当性)**]()|404ページ〜|
+|9|[**評価指標の算出(ベイズ統計モデリング)**]()|411ページ〜|
+|9|[**交差検証**]()|413ページ〜|
 
 付録（本文中で解説していないコード）
 
-|関連する章|手法名とソースコードへのリンク|書籍中のページ|
+|関連する章|手法名とソースコードへのリンク|関連する書籍中のページ|
 |---|---|---|
-|5|[**二項ベータ分布モデル（過分散付き二項分布）**]()||201,315,366ページ|
-|5|[**負の二項分布モデル（過分散付きポアソン分布）**]()||201,315,366ページ|
+|5|[**二項ベータ分布モデル（過分散付き二項分布）**]()|201,315,366ページ|
+|5|[**負の二項分布モデル（過分散付きポアソン分布）**]()|201,315,366ページ|
 |6|[**OC-SVM**]()|252ページ|
-|7|[**ガウス過程回帰**]()||
+|7|[**ガウス過程回帰**]()|-|
 |8|[**ポアソン回帰モデル**]()|361ページ|
 |8|[**グループ差を含むGLMM**]()|384ページ|
 
@@ -245,7 +247,22 @@ flowchart LR;
 |7章|[**多変数線形回帰モデルの最尤推定**]()|286ページ|
 |5,8章|[**ベータ二項分布モデル（過分散付き二項分布）による異常検知**]()|201,315,366ページ|
 |5,8章|[**負の二項分布モデル（過分散付きポアソン分布）による異常検知**]()|201,315,366ページ|
-|8章|[**ポアソン回帰による異常検知**]()|361ページ|
-|8章|[**グループ差によるランダム効果を含むGLMMによる異常検知**]()|366,384ページ|
 
 ## 正誤表
+
+|章|ページ|誤|正|
+|---|---|---|---|
+|2|83|[5]https://kikakurui.com/z8/Z8101-1-2015-01.html|[5]https://numpy.org/doc/2.2/reference/generated/numpy.histogram_bin_edges.html#numpy.histogram_bin_edges|
+|2|97|注意点として、このクラスは入力データに欠測値があると動作しないので、事前に9章で紹介する方法で欠測データを除去または補完する必要があります。また|（削除）|
+|2|100|コード2.23 2〜5章で使用するサンプルデータの作成|コード2.23 2〜6章で使用するサンプルデータの作成|
+|2|100|df_anom_train, df_anom_inference = df_normal[:20], df_normal[20:]|df_anom_train, df_anom_inference = df_anomaly[:20], df_anomaly[20:]|
+|4|155|コード4.6 二項分布の確率密度関数|コード4.6 二項分布の確率質量関数|
+|4|155|コード4.7 ポアソン分布の確率密度関数|コード4.7 ポアソン分布の確率質量関数|
+|4|169|# データのヒストグラムと最尤推定した正規分布を重ねて表示|# データのヒストグラムと最尤推定したカイ二乗分布を重ねて表示|
+|4|173|quantile–quantil plot|quantile–quantile plot|
+|6|233|$\mathcal{F}(N,N-M)$|$\mathcal{F}(M,N-M)$|
+|7|276|コード7.5 箱ひげ図を用いたカテゴリ変数による分布形状の変化の可視化|コード7.5 箱ひげ図と単回帰直線による入出力があるデータの可視化|
+|7|281|式（7.28）の分母|式（7.19）の分母|
+|8|335|[6]https://www.pymc.io/projects/docs/en/stable/learn/core\_notebooks/pymc\_pytensor.html|[6]https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_pytensor.html|
+
+本ページに掲載されていない誤植などの間違いを見つけられた方は、本ページのIssuesまでお知らせください。
