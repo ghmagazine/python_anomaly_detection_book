@@ -237,3 +237,9 @@ conda install scikit-learn
 最初の1回のみPythonの実行環境の選択が求められるので、`Python Envifonments`→`anomaly_detection`（先ほど作成した仮想環境）と選択します。
 
 エラーなしで実行できれば成功です。
+
+## Linux
+
+- OSのバージョン：Ubuntu22.04LTSまたはUbuntu24.04LTS
+- Pythonのバージョン：3.10以降
+- パッケージ管理ツール：conda（Miniforge）
