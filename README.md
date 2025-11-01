@@ -255,7 +255,7 @@ flowchart LR;
 |2|83|[5]https://kikakurui.com/z8/Z8101-1-2015-01.html|[5]https://numpy.org/doc/2.2/reference/generated/numpy.histogram_bin_edges.html#numpy.histogram_bin_edges|
 |2|97|注意点として、このクラスは入力データに欠測値があると動作しないので、事前に9章で紹介する方法で欠測データを除去または補完する必要があります。また|（削除）|
 |2|100|コード2.23 2〜5章で使用するサンプルデータの作成|コード2.23 2〜6章で使用するサンプルデータの作成|
-|2|100|df_anom_train, df_anom_inference = df_normal[:20], df_normal[20:]|df_anom_train, df_anom_inference = df_anomaly[:20], df_anomaly[20:]|
+|2|100|コード2.23 42行目`df_anom_train, df_anom_inference = df_normal[:20], df_normal[20:]`|`df_anom_train, df_anom_inference = df_anomaly[:20], df_anomaly[20:]`|
 |4|155|コード4.6 二項分布の確率密度関数|コード4.6 二項分布の確率質量関数|
 |4|155|コード4.7 ポアソン分布の確率密度関数|コード4.7 ポアソン分布の確率質量関数|
 |4|169|# データのヒストグラムと最尤推定した正規分布を重ねて表示|# データのヒストグラムと最尤推定したカイ二乗分布を重ねて表示|
@@ -264,5 +264,7 @@ flowchart LR;
 |7|276|コード7.5 箱ひげ図を用いたカテゴリ変数による分布形状の変化の可視化|コード7.5 箱ひげ図と単回帰直線による入出力があるデータの可視化|
 |7|281|式（7.28）の分母|式（7.19）の分母|
 |8|335|[6]https://www.pymc.io/projects/docs/en/stable/learn/core\_notebooks/pymc\_pytensor.html|[6]https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_pytensor.html|
+|8|356|コード8.19 5行目`x_train`|`x_inference`|
+|8|356|コード8.19 6行目`x_inference`|`y_inference`|
 
 本ページに掲載されていない誤植などの間違いを見つけられた方は、本ページのIssuesまでお知らせください。
