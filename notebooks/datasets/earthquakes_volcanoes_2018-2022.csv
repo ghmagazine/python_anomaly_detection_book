@@ -1,0 +1,456 @@
+country,year,earthquakes,volcanoes,active_since_1800,active_since_1960,current_erupting
+Afghanistan,2018,1,0,0,0,
+Afghanistan,2019,1,0,0,0,
+Afghanistan,2022,1,0,0,0,
+Albania,2019,1,0,0,0,
+Algeria,2021,1,3,0,0,[]
+Argentina,2019,2,34,6,3,[]
+Argentina,2020,1,34,6,3,[]
+Argentina,2021,3,34,6,3,[]
+Argentina,2022,2,34,6,3,[]
+Australia,2019,1,4,2,2,[Heard]
+Bolivia,2018,1,7,1,1,[]
+Bolivia,2019,1,7,1,1,[]
+Brazil,2019,1,0,0,0,
+Brazil,2022,1,0,0,0,
+Canada,2018,3,24,1,0,[]
+Canada,2019,4,24,1,0,[]
+Chile,2018,3,91,35,19,[Villarrica]
+Chile,2019,6,91,35,19,[Villarrica]
+Chile,2020,11,91,35,19,[Villarrica]
+Chile,2021,3,91,35,19,[Villarrica]
+Chile,2022,5,91,35,19,[Villarrica]
+China,2020,2,10,3,0,[]
+China,2021,2,10,3,0,[]
+China,2022,2,10,3,0,[]
+Colombia,2018,1,14,8,4,[Nevado del Ruiz]
+Colombia,2019,2,14,8,4,[Nevado del Ruiz]
+Costa Rica,2018,1,10,6,5,[Rincon de la Vieja;Poas]
+Costa Rica,2020,1,10,6,5,[Rincon de la Vieja;Poas]
+Croatia,2020,1,0,0,0,
+Cyprus,2022,1,0,0,0,
+Ecuador,2018,1,36,18,12,[Fernandina;Reventador;Sangay]
+Ecuador,2019,2,36,18,12,[Fernandina;Reventador;Sangay]
+El Salvador,2018,1,20,5,3,[]
+El Salvador,2019,1,20,5,3,[]
+El Salvador,2021,1,20,5,3,[]
+Fiji,2018,6,2,0,0,[]
+Fiji,2019,1,2,0,0,[]
+Fiji,2021,2,2,0,0,[]
+France,2018,8,19,11,8,[]
+France,2019,3,19,11,8,[]
+France,2021,2,19,11,8,[]
+France,2022,1,19,11,8,[]
+Greece,2018,1,4,2,0,[]
+Greece,2019,1,4,2,0,[]
+Greece,2020,2,4,2,0,[]
+Greece,2021,3,4,2,0,[]
+Guatemala,2022,1,21,7,5,[Santa Maria;Fuego]
+Haiti,2021,1,0,0,0,
+Honduras,2018,1,3,0,0,[]
+Honduras,2020,1,3,0,0,[]
+Iceland,2020,1,35,14,10,[Reykjanes]
+India,2020,1,2,1,1,[Barren Island]
+India,2021,2,2,1,1,[Barren Island]
+Indonesia,2018,14,116,74,55,[Semeru;Ruang;Karangetang;Dukono;Ibu;Lewotobi;Lewotolok;Merapi;Marapi]
+Indonesia,2019,14,116,74,55,[Semeru;Ruang;Karangetang;Dukono;Ibu;Lewotobi;Lewotolok;Merapi;Marapi]
+Indonesia,2020,13,116,74,55,[Semeru;Ruang;Karangetang;Dukono;Ibu;Lewotobi;Lewotolok;Merapi;Marapi]
+Indonesia,2021,14,116,74,55,[Semeru;Ruang;Karangetang;Dukono;Ibu;Lewotobi;Lewotolok;Merapi;Marapi]
+Indonesia,2022,11,116,74,55,[Semeru;Ruang;Karangetang;Dukono;Ibu;Lewotobi;Lewotolok;Merapi;Marapi]
+Iran,2018,2,1,0,0,[]
+Iran,2021,2,1,0,0,[]
+Iran,2022,2,1,0,0,[]
+Jamaica,2020,1,0,0,0,
+Japan,2018,3,121,62,40,[Suwanosejima;Kikai;Aira;Ioto]
+Japan,2019,8,121,62,40,[Suwanosejima;Kikai;Aira;Ioto]
+Japan,2020,5,121,62,40,[Suwanosejima;Kikai;Aira;Ioto]
+Japan,2021,8,121,62,40,[Suwanosejima;Kikai;Aira;Ioto]
+Japan,2022,6,121,62,40,[Suwanosejima;Kikai;Aira;Ioto]
+Laos,2019,1,0,0,0,
+Mauritius,2019,1,0,0,0,
+Mexico,2018,2,36,9,5,[Popocatepetl]
+Mexico,2019,2,36,9,5,[Popocatepetl]
+Mexico,2020,2,36,9,5,[Popocatepetl]
+Mexico,2021,2,36,9,5,[Popocatepetl]
+Mexico,2022,5,36,9,5,[Popocatepetl]
+Micronesia,2020,1,0,0,0,
+Mongolia,2021,1,3,0,0,[]
+Myanmar,2018,1,1,0,0,[]
+Myanmar,2021,1,1,0,0,[]
+New Zealand,2018,2,24,9,8,[]
+New Zealand,2019,5,24,9,8,[]
+New Zealand,2021,9,24,9,8,[]
+New Zealand,2022,1,24,9,8,[]
+Nicaragua,2021,2,13,8,6,[Masaya]
+Nicaragua,2022,1,13,8,6,[Masaya]
+Norway,2018,1,2,1,1,[]
+Palau,2019,1,0,0,0,
+Palau,2020,1,0,0,0,
+Panama,2019,2,1,0,0,[]
+Panama,2021,3,1,0,0,[]
+Panama,2022,2,1,0,0,[]
+Papua New Guinea,2018,16,44,20,13,[Langila;Bagana;Manam]
+Papua New Guinea,2019,10,44,20,13,[Langila;Bagana;Manam]
+Papua New Guinea,2020,10,44,20,13,[Langila;Bagana;Manam]
+Papua New Guinea,2021,7,44,20,13,[Langila;Bagana;Manam]
+Papua New Guinea,2022,7,44,20,13,[Langila;Bagana;Manam]
+Peru,2018,2,16,5,3,[Sabancaya]
+Peru,2019,2,16,5,3,[Sabancaya]
+Peru,2020,1,16,5,3,[Sabancaya]
+Peru,2021,2,16,5,3,[Sabancaya]
+Peru,2022,2,16,5,3,[Sabancaya]
+Philippines,2018,5,37,14,6,[Mayon;Taal]
+Philippines,2019,10,37,14,6,[Mayon;Taal]
+Philippines,2020,8,37,14,6,[Mayon;Taal]
+Philippines,2021,5,37,14,6,[Mayon;Taal]
+Philippines,2022,9,37,14,6,[Mayon;Taal]
+Russia,2018,10,115,49,27,[Bezymianny;Sheveluch;Ebeko]
+Russia,2019,4,115,49,27,[Bezymianny;Sheveluch;Ebeko]
+Russia,2020,5,115,49,27,[Bezymianny;Sheveluch;Ebeko]
+Russia,2021,2,115,49,27,[Bezymianny;Sheveluch;Ebeko]
+Russia,2022,1,115,49,27,[Bezymianny;Sheveluch;Ebeko]
+Solomon Islands,2018,3,8,4,2,[Tinakula;Kavachi]
+Solomon Islands,2019,1,8,4,2,[Tinakula;Kavachi]
+Solomon Islands,2020,3,8,4,2,[Tinakula;Kavachi]
+Solomon Islands,2021,2,8,4,2,[Tinakula;Kavachi]
+Solomon Islands,2022,1,8,4,2,[Tinakula;Kavachi]
+Taiwan,2018,2,2,1,0,[]
+Taiwan,2019,1,2,1,0,[]
+Taiwan,2020,1,2,1,0,[]
+Taiwan,2021,1,2,1,0,[]
+Taiwan,2022,4,2,1,0,[]
+Tajikistan,2018,1,0,0,0,
+Tanzania,2020,1,6,3,1,[Ol Doinyo Lengai]
+Timor Leste,2018,1,0,0,0,
+Timor Leste,2019,1,0,0,0,
+Timor Leste,2021,1,0,0,0,
+Timor Leste,2022,2,0,0,0,
+Tonga,2018,2,21,15,9,[Tofua]
+Tonga,2019,7,21,15,9,[Tofua]
+Tonga,2020,6,21,15,9,[Tofua]
+Tonga,2021,3,21,15,9,[Tofua]
+Tonga,2022,4,21,15,9,[Tofua]
+Turkey,2020,2,7,2,0,[]
+Turkey,2022,1,7,2,0,[]
+United Kingdom,2020,1,14,10,9,[Saunders]
+United States,2018,11,165,63,39,[Great Sitkin]
+United States,2019,8,165,63,39,[Great Sitkin]
+United States,2020,11,165,63,39,[Great Sitkin]
+United States,2021,8,165,63,39,[Great Sitkin]
+United States,2022,7,165,63,39,[Great Sitkin]
+Vanuatu,2018,4,14,12,9,[Yasur]
+Vanuatu,2019,10,14,12,9,[Yasur]
+Vanuatu,2020,5,14,12,9,[Yasur]
+Vanuatu,2021,7,14,12,9,[Yasur]
+Vanuatu,2022,6,14,12,9,[Yasur]
+Venezuela,2018,1,0,0,0,
+Yemen,2018,2,10,2,2,[]
+Armenia,2018,0,5,0,0,[]
+Armenia,2019,0,5,0,0,[]
+Armenia,2020,0,5,0,0,[]
+Armenia,2021,0,5,0,0,[]
+Armenia,2022,0,5,0,0,[]
+Azerbaijan,2018,0,2,0,0,[]
+Azerbaijan,2019,0,2,0,0,[]
+Azerbaijan,2020,0,2,0,0,[]
+Azerbaijan,2021,0,2,0,0,[]
+Azerbaijan,2022,0,2,0,0,[]
+Cabo Verde,2018,0,2,1,1,[]
+Cabo Verde,2019,0,2,1,1,[]
+Cabo Verde,2020,0,2,1,1,[]
+Cabo Verde,2021,0,2,1,1,[]
+Cabo Verde,2022,0,2,1,1,[]
+Cameroon,2018,0,3,1,1,[]
+Cameroon,2019,0,3,1,1,[]
+Cameroon,2020,0,3,1,1,[]
+Cameroon,2021,0,3,1,1,[]
+Cameroon,2022,0,3,1,1,[]
+Chad,2018,0,4,0,0,[]
+Chad,2019,0,4,0,0,[]
+Chad,2020,0,4,0,0,[]
+Chad,2021,0,4,0,0,[]
+Chad,2022,0,4,0,0,[]
+Comoros,2018,0,2,1,1,[]
+Comoros,2019,0,2,1,1,[]
+Comoros,2020,0,2,1,1,[]
+Comoros,2021,0,2,1,1,[]
+Comoros,2022,0,2,1,1,[]
+DR Congo,2018,0,4,3,2,[Nyamulagira]
+DR Congo,2019,0,4,3,2,[Nyamulagira]
+DR Congo,2020,0,4,3,2,[Nyamulagira]
+DR Congo,2021,0,4,3,2,[Nyamulagira]
+DR Congo,2022,0,4,3,2,[Nyamulagira]
+Djibouti,2018,0,4,2,1,[]
+Djibouti,2019,0,4,2,1,[]
+Djibouti,2020,0,4,2,1,[]
+Djibouti,2021,0,4,2,1,[]
+Djibouti,2022,0,4,2,1,[]
+Dominica,2018,0,5,1,1,[]
+Dominica,2019,0,5,1,1,[]
+Dominica,2020,0,5,1,1,[]
+Dominica,2021,0,5,1,1,[]
+Dominica,2022,0,5,1,1,[]
+Equatorial Guinea,2018,0,3,1,0,[]
+Equatorial Guinea,2019,0,3,1,0,[]
+Equatorial Guinea,2020,0,3,1,0,[]
+Equatorial Guinea,2021,0,3,1,0,[]
+Equatorial Guinea,2022,0,3,1,0,[]
+Eritrea,2018,0,8,2,1,[]
+Eritrea,2019,0,8,2,1,[]
+Eritrea,2020,0,8,2,1,[]
+Eritrea,2021,0,8,2,1,[]
+Eritrea,2022,0,8,2,1,[]
+Ethiopia,2018,0,50,10,5,[Erta Ale]
+Ethiopia,2019,0,50,10,5,[Erta Ale]
+Ethiopia,2020,0,50,10,5,[Erta Ale]
+Ethiopia,2021,0,50,10,5,[Erta Ale]
+Ethiopia,2022,0,50,10,5,[Erta Ale]
+Georgia,2018,0,2,0,0,[]
+Georgia,2019,0,2,0,0,[]
+Georgia,2020,0,2,0,0,[]
+Georgia,2021,0,2,0,0,[]
+Georgia,2022,0,2,0,0,[]
+Germany,2018,0,1,0,0,[]
+Germany,2019,0,1,0,0,[]
+Germany,2020,0,1,0,0,[]
+Germany,2021,0,1,0,0,[]
+Germany,2022,0,1,0,0,[]
+Grenada,2018,0,2,1,1,[]
+Grenada,2019,0,2,1,1,[]
+Grenada,2020,0,2,1,1,[]
+Grenada,2021,0,2,1,1,[]
+Grenada,2022,0,2,1,1,[]
+Italy,2018,0,13,6,2,[Stromboli;Etna]
+Italy,2019,0,13,6,2,[Stromboli;Etna]
+Italy,2020,0,13,6,2,[Stromboli;Etna]
+Italy,2021,0,13,6,2,[Stromboli;Etna]
+Italy,2022,0,13,6,2,[Stromboli;Etna]
+Jordan,2018,0,1,0,0,[]
+Jordan,2019,0,1,0,0,[]
+Jordan,2020,0,1,0,0,[]
+Jordan,2021,0,1,0,0,[]
+Jordan,2022,0,1,0,0,[]
+Kenya,2018,0,21,5,0,[]
+Kenya,2019,0,21,5,0,[]
+Kenya,2020,0,21,5,0,[]
+Kenya,2021,0,21,5,0,[]
+Kenya,2022,0,21,5,0,[]
+Madagascar,2018,0,5,0,0,[]
+Madagascar,2019,0,5,0,0,[]
+Madagascar,2020,0,5,0,0,[]
+Madagascar,2021,0,5,0,0,[]
+Madagascar,2022,0,5,0,0,[]
+Netherlands,2018,0,2,0,0,[]
+Netherlands,2019,0,2,0,0,[]
+Netherlands,2020,0,2,0,0,[]
+Netherlands,2021,0,2,0,0,[]
+Netherlands,2022,0,2,0,0,[]
+Niger,2018,0,1,0,0,[]
+Niger,2019,0,1,0,0,[]
+Niger,2020,0,1,0,0,[]
+Niger,2021,0,1,0,0,[]
+Niger,2022,0,1,0,0,[]
+North Korea,2018,0,2,1,0,[]
+North Korea,2019,0,2,1,0,[]
+North Korea,2020,0,2,1,0,[]
+North Korea,2021,0,2,1,0,[]
+North Korea,2022,0,2,1,0,[]
+Portugal,2018,0,13,5,1,[]
+Portugal,2019,0,13,5,1,[]
+Portugal,2020,0,13,5,1,[]
+Portugal,2021,0,13,5,1,[]
+Portugal,2022,0,13,5,1,[]
+Rwanda,2018,0,3,1,0,[]
+Rwanda,2019,0,3,1,0,[]
+Rwanda,2020,0,3,1,0,[]
+Rwanda,2021,0,3,1,0,[]
+Rwanda,2022,0,3,1,0,[]
+Saint Kitts and Nevis,2018,0,2,0,0,[]
+Saint Kitts and Nevis,2019,0,2,0,0,[]
+Saint Kitts and Nevis,2020,0,2,0,0,[]
+Saint Kitts and Nevis,2021,0,2,0,0,[]
+Saint Kitts and Nevis,2022,0,2,0,0,[]
+Saint Lucia,2018,0,1,0,0,[]
+Saint Lucia,2019,0,1,0,0,[]
+Saint Lucia,2020,0,1,0,0,[]
+Saint Lucia,2021,0,1,0,0,[]
+Saint Lucia,2022,0,1,0,0,[]
+Saint Vincent and the Grenadines,2018,0,1,1,1,[]
+Saint Vincent and the Grenadines,2019,0,1,1,1,[]
+Saint Vincent and the Grenadines,2020,0,1,1,1,[]
+Saint Vincent and the Grenadines,2021,0,1,1,1,[]
+Saint Vincent and the Grenadines,2022,0,1,1,1,[]
+Samoa,2018,0,2,1,0,[]
+Samoa,2019,0,2,1,0,[]
+Samoa,2020,0,2,1,0,[]
+Samoa,2021,0,2,1,0,[]
+Samoa,2022,0,2,1,0,[]
+Saudi Arabia,2018,0,8,1,0,[]
+Saudi Arabia,2019,0,8,1,0,[]
+Saudi Arabia,2020,0,8,1,0,[]
+Saudi Arabia,2021,0,8,1,0,[]
+Saudi Arabia,2022,0,8,1,0,[]
+South Africa,2018,0,2,1,1,[]
+South Africa,2019,0,2,1,1,[]
+South Africa,2020,0,2,1,1,[]
+South Africa,2021,0,2,1,1,[]
+South Africa,2022,0,2,1,1,[]
+South Korea,2018,0,3,0,0,[]
+South Korea,2019,0,3,0,0,[]
+South Korea,2020,0,3,0,0,[]
+South Korea,2021,0,3,0,0,[]
+South Korea,2022,0,3,0,0,[]
+Spain,2018,0,8,4,2,[]
+Spain,2019,0,8,4,2,[]
+Spain,2020,0,8,4,2,[]
+Spain,2021,0,8,4,2,[]
+Spain,2022,0,8,4,2,[]
+Sudan,2018,0,4,0,0,[]
+Sudan,2019,0,4,0,0,[]
+Sudan,2020,0,4,0,0,[]
+Sudan,2021,0,4,0,0,[]
+Sudan,2022,0,4,0,0,[]
+Syria,2018,0,1,0,0,[]
+Syria,2019,0,1,0,0,[]
+Syria,2020,0,1,0,0,[]
+Syria,2021,0,1,0,0,[]
+Syria,2022,0,1,0,0,[]
+Uganda,2018,0,7,0,0,[]
+Uganda,2019,0,7,0,0,[]
+Uganda,2020,0,7,0,0,[]
+Uganda,2021,0,7,0,0,[]
+Uganda,2022,0,7,0,0,[]
+Vietnam,2018,0,2,1,0,[]
+Vietnam,2019,0,2,1,0,[]
+Vietnam,2020,0,2,1,0,[]
+Vietnam,2021,0,2,1,0,[]
+Vietnam,2022,0,2,1,0,[]
+Afghanistan,2020,0,0,0,0,
+Afghanistan,2021,0,0,0,0,
+Albania,2018,0,0,0,0,
+Albania,2020,0,0,0,0,
+Albania,2021,0,0,0,0,
+Albania,2022,0,0,0,0,
+Algeria,2018,0,0,0,0,
+Algeria,2019,0,0,0,0,
+Algeria,2020,0,0,0,0,
+Algeria,2022,0,0,0,0,
+Argentina,2018,0,0,0,0,
+Australia,2018,0,0,0,0,
+Australia,2020,0,0,0,0,
+Australia,2021,0,0,0,0,
+Australia,2022,0,0,0,0,
+Bolivia,2020,0,0,0,0,
+Bolivia,2021,0,0,0,0,
+Bolivia,2022,0,0,0,0,
+Brazil,2018,0,0,0,0,
+Brazil,2020,0,0,0,0,
+Brazil,2021,0,0,0,0,
+Canada,2020,0,0,0,0,
+Canada,2021,0,0,0,0,
+Canada,2022,0,0,0,0,
+China,2018,0,0,0,0,
+China,2019,0,0,0,0,
+Colombia,2020,0,0,0,0,
+Colombia,2021,0,0,0,0,
+Colombia,2022,0,0,0,0,
+Costa Rica,2019,0,0,0,0,
+Costa Rica,2021,0,0,0,0,
+Costa Rica,2022,0,0,0,0,
+Croatia,2018,0,0,0,0,
+Croatia,2019,0,0,0,0,
+Croatia,2021,0,0,0,0,
+Croatia,2022,0,0,0,0,
+Cyprus,2018,0,0,0,0,
+Cyprus,2019,0,0,0,0,
+Cyprus,2020,0,0,0,0,
+Cyprus,2021,0,0,0,0,
+Ecuador,2020,0,0,0,0,
+Ecuador,2021,0,0,0,0,
+Ecuador,2022,0,0,0,0,
+El Salvador,2020,0,0,0,0,
+El Salvador,2022,0,0,0,0,
+Fiji,2020,0,0,0,0,
+Fiji,2022,0,0,0,0,
+France,2020,0,0,0,0,
+Greece,2022,0,0,0,0,
+Guatemala,2018,0,0,0,0,
+Guatemala,2019,0,0,0,0,
+Guatemala,2020,0,0,0,0,
+Guatemala,2021,0,0,0,0,
+Haiti,2018,0,0,0,0,
+Haiti,2019,0,0,0,0,
+Haiti,2020,0,0,0,0,
+Haiti,2022,0,0,0,0,
+Honduras,2019,0,0,0,0,
+Honduras,2021,0,0,0,0,
+Honduras,2022,0,0,0,0,
+Iceland,2018,0,0,0,0,
+Iceland,2019,0,0,0,0,
+Iceland,2021,0,0,0,0,
+Iceland,2022,0,0,0,0,
+India,2018,0,0,0,0,
+India,2019,0,0,0,0,
+India,2022,0,0,0,0,
+Iran,2019,0,0,0,0,
+Iran,2020,0,0,0,0,
+Jamaica,2018,0,0,0,0,
+Jamaica,2019,0,0,0,0,
+Jamaica,2021,0,0,0,0,
+Jamaica,2022,0,0,0,0,
+Laos,2018,0,0,0,0,
+Laos,2020,0,0,0,0,
+Laos,2021,0,0,0,0,
+Laos,2022,0,0,0,0,
+Mauritius,2018,0,0,0,0,
+Mauritius,2020,0,0,0,0,
+Mauritius,2021,0,0,0,0,
+Mauritius,2022,0,0,0,0,
+Micronesia,2018,0,0,0,0,
+Micronesia,2019,0,0,0,0,
+Micronesia,2021,0,0,0,0,
+Micronesia,2022,0,0,0,0,
+Mongolia,2018,0,0,0,0,
+Mongolia,2019,0,0,0,0,
+Mongolia,2020,0,0,0,0,
+Mongolia,2022,0,0,0,0,
+Myanmar,2019,0,0,0,0,
+Myanmar,2020,0,0,0,0,
+Myanmar,2022,0,0,0,0,
+New Zealand,2020,0,0,0,0,
+Nicaragua,2018,0,0,0,0,
+Nicaragua,2019,0,0,0,0,
+Nicaragua,2020,0,0,0,0,
+Norway,2019,0,0,0,0,
+Norway,2020,0,0,0,0,
+Norway,2021,0,0,0,0,
+Norway,2022,0,0,0,0,
+Palau,2018,0,0,0,0,
+Palau,2021,0,0,0,0,
+Palau,2022,0,0,0,0,
+Panama,2018,0,0,0,0,
+Panama,2020,0,0,0,0,
+Tajikistan,2019,0,0,0,0,
+Tajikistan,2020,0,0,0,0,
+Tajikistan,2021,0,0,0,0,
+Tajikistan,2022,0,0,0,0,
+Tanzania,2018,0,0,0,0,
+Tanzania,2019,0,0,0,0,
+Tanzania,2021,0,0,0,0,
+Tanzania,2022,0,0,0,0,
+Timor Leste,2020,0,0,0,0,
+Turkey,2018,0,0,0,0,
+Turkey,2019,0,0,0,0,
+Turkey,2021,0,0,0,0,
+United Kingdom,2018,0,0,0,0,
+United Kingdom,2019,0,0,0,0,
+United Kingdom,2021,0,0,0,0,
+United Kingdom,2022,0,0,0,0,
+Venezuela,2019,0,0,0,0,
+Venezuela,2020,0,0,0,0,
+Venezuela,2021,0,0,0,0,
+Venezuela,2022,0,0,0,0,
+Yemen,2019,0,0,0,0,
+Yemen,2020,0,0,0,0,
+Yemen,2021,0,0,0,0,
+Yemen,2022,0,0,0,0,

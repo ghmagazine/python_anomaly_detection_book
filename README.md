@@ -252,6 +252,7 @@ flowchart LR;
 
 |章|ページ|誤|正|
 |---|---|---|---|
+|1|48|true positive：真陰性|true negative：真陰性|
 |2|83|[5]https://kikakurui.com/z8/Z8101-1-2015-01.html|[5]https://numpy.org/doc/2.2/reference/generated/numpy.histogram_bin_edges.html#numpy.histogram_bin_edges|
 |2|97|注意点として、このクラスは入力データに欠測値があると動作しないので、事前に9章で紹介する方法で欠測データを除去または補完する必要があります。また|（削除）|
 |2|100|コード2.23 2〜5章で使用するサンプルデータの作成|コード2.23 2〜6章で使用するサンプルデータの作成|
@@ -264,6 +265,7 @@ flowchart LR;
 |7|276|コード7.5 箱ひげ図を用いたカテゴリ変数による分布形状の変化の可視化|コード7.5 箱ひげ図と単回帰直線による入出力があるデータの可視化|
 |7|281|式（7.28）の分母|式（7.19）の分母|
 |8|335|[6]https://www.pymc.io/projects/docs/en/stable/learn/core\_notebooks/pymc\_pytensor.html|[6]https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_pytensor.html|
+|8|354|年齢$x$に対する切片|年齢$x$に対する傾き|
 |8|356|コード8.19 5行目`x_train`|`x_inference`|
 |8|356|コード8.19 6行目`x_inference`|`y_inference`|
 
