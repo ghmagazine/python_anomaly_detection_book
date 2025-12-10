@@ -215,8 +215,8 @@ flowchart LR;
 |7|[**ガンマ回帰（非正規GLM）モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch7_6_Gamma_Regression.ipynb)|301ページ〜|
 |8|[**ベイズ線形回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_4_Bayesian_Linear_Regression.ipynb)|334ページ〜|
 |8|[**二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_5_Binomial_Logistic_Regression.ipynb)|350ページ〜|
-|8|[**ランダム効果を含む二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_5_Random_Binomial_Logistic_Regression.ipynb)|369ページ〜|
-|9|[**各種前処理**]()|379ページ〜|
+|8|[**ランダム効果を含む二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_7_Random_Binomial_Logisitic_Regression.ipynb)|369ページ〜|
+|9|[**各種前処理**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_2_Preprocessing.ipynb)|379ページ〜|
 |9|[**評価指標の算出(ラベルの予測精度)**]()|397ページ〜|
 |9|[**評価指標の算出(統計モデル選択の妥当性)**]()|404ページ〜|
 |9|[**評価指標の算出(ベイズ統計モデリング)**]()|411ページ〜|
@@ -264,6 +264,7 @@ flowchart LR;
 |6|233|$\mathcal{F}(N,N-M)$|$\mathcal{F}(M,N-M)$|
 |7|276|コード7.5 箱ひげ図を用いたカテゴリ変数による分布形状の変化の可視化|コード7.5 箱ひげ図と単回帰直線による入出力があるデータの可視化|
 |7|281|式（7.28）の分母|式（7.19）の分母|
+|7|291|コード7.12 19行目`学習データの説明変数`|`推論データの説明変数`|
 |8|335|[6]https://www.pymc.io/projects/docs/en/stable/learn/core\_notebooks/pymc\_pytensor.html|[6]https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_pytensor.html|
 |8|354|年齢$x$に対する切片|年齢$x$に対する傾き|
 |8|356|コード8.19 5行目`x_train`|`x_inference`|
