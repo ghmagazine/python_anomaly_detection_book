@@ -217,9 +217,8 @@ flowchart LR;
 |8|[**二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_5_Binomial_Logistic_Regression.ipynb)|350ページ〜|
 |8|[**ランダム効果を含む二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_7_Random_Binomial_Logisitic_Regression.ipynb)|369ページ〜|
 |9|[**各種前処理**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_2_Preprocessing.ipynb)|379ページ〜|
-|9|[**評価指標の算出(ラベルの予測精度)**]()|397ページ〜|
-|9|[**評価指標の算出(統計モデル選択の妥当性)**]()|404ページ〜|
-|9|[**評価指標の算出(ベイズ統計モデリング)**]()|411ページ〜|
+|9|[**評価指標の算出(ラベルの予測精度)**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_3_Classification_Metrics.ipynb)|397ページ〜|
+|9|[**評価指標の算出(統計モデル選択の妥当性)**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_3_Statistical_Model_Metrics.ipynb)|404ページ〜|
 |9|[**交差検証**]()|413ページ〜|
 
 付録（本文中で解説していないコード）
@@ -229,8 +228,10 @@ flowchart LR;
 |5|[**二項ベータ分布モデル（過分散付き二項分布）**]()|201,315,366ページ|
 |5|[**負の二項分布モデル（過分散付きポアソン分布）**]()|201,315,366ページ|
 |6|[**OC-SVM**]()|252ページ|
+|7|[**最尤推定による二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch7_Binomial_Logisitc_Regression_Maxlikelihood.ipynb)|-|
+|7|[**最尤推定によるポアソン回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch7_Poisson_Regression_Maxlikelihood.ipynb)|-|
 |7|[**ガウス過程回帰**]()|-|
-|8|[**ポアソン回帰モデル**]()|361ページ|
+|8|[**ポアソン回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch8_6_Poisson_Regression.ipynb)|361ページ|
 |8|[**グループ差を含むGLMM**]()|384ページ|
 
 ## 付録解説
@@ -271,5 +272,6 @@ flowchart LR;
 |8|356|コード8.19 6行目`x_inference`|`y_inference`|
 |9|382|図9.1 Forward法「評価指標または有意性が最大となった変数をモデルに追加」|「評価指標が最良または有意性が最も低くなった変数をモデルに追加」|
 |9|382|図9.1 Backward法「評価指標または有意性が最小となった変数をモデルから除外」|「評価指標が最良または有意性が最も低くなった変数をモデルから除外」|
+|9|418|コード9.24 交差検証用データ読み込み|コード9.24 Stratified K-Foldによる交差検証の実装|
 
 本ページに掲載されていない誤植などの間違いを見つけられた方は、本ページのIssuesまでお知らせください。
