@@ -219,7 +219,7 @@ flowchart LR;
 |9|[**各種前処理**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_2_Preprocessing.ipynb)|379ページ〜|
 |9|[**評価指標の算出(ラベルの予測精度)**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_3_Classification_Metrics.ipynb)|397ページ〜|
 |9|[**評価指標の算出(統計モデル選択の妥当性)**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_3_Statistical_Model_Metrics.ipynb)|404ページ〜|
-|9|[**交差検証**]()|413ページ〜|
+|9|[**交差検証**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_3_Cross_Varidation.ipynb)|413ページ〜|
 
 付録（本文中で解説していないコード）
 
@@ -241,8 +241,8 @@ flowchart LR;
 |関連する章|解説内容とリンク|関連する書籍中のページ|
 |---|---|---|
 |4章|[**ホテリング理論の異常度が従う確率分布の求め方**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/4_Normal_Distribution_Formula_List.md)|170,188ページ|
-|6章|[**多次元正規分布の幾何的な意味**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_Multivariate_Normal_Shape.md)|228ページ|
-|6章|[**多次元正規分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_Multivariate_Normal_Maximum_Likelihood.md)|231ページ|
+|6章|[**多次元正規分布の幾何的な意味**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_2_Multivariate_Normal_Shape.md)|228ページ|
+|6章|[**多次元正規分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_2_Multivariate_Normal_Maximum_Likelihood.md)|231ページ|
 |6章|[**EMアルゴリズムとGMM**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_GMM_EM_Algorithm.md)|245ページ|
 |7章|[**1変数線形回帰モデルの最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/7_Simple_Linear_Maximum_Likelihood.md)|277ページ|
 |7章|[**多変数線形回帰モデルの最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/7_Multiple_Linear_Maximum_Likelihood.md)|286ページ|
