@@ -243,7 +243,7 @@ flowchart LR;
 |4章|[**ホテリング理論の異常度が従う確率分布の求め方**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/4_Normal_Distribution_Formula_List.md)|170,188ページ|
 |6章|[**多次元正規分布の幾何的な意味**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_2_Multivariate_Normal_Shape.md)|228ページ|
 |6章|[**多次元正規分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_2_Multivariate_Normal_Maximum_Likelihood.md)|231ページ|
-|6章|[**EMアルゴリズムとGMM**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_GMM_EM_Algorithm.md)|245ページ|
+|6章|[**EMアルゴリズムとGMM**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_5_GMM_EM_Algorithm.md)|245ページ|
 |7章|[**1変数線形回帰モデルの最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/7_Simple_Linear_Maximum_Likelihood.md)|277ページ|
 |7章|[**多変数線形回帰モデルの最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/7_Multiple_Linear_Maximum_Likelihood.md)|286ページ|
 |5,8章|[**ベータ二項分布モデル（過分散付き二項分布）による異常検知**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/8_Beta_Binomial.md)|201,315,366ページ|
