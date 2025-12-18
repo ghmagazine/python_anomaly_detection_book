@@ -215,12 +215,11 @@ flowchart LR;
 |7|[**ガンマ回帰（非正規GLM）モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch7_6_Gamma_Regression.ipynb)|301ページ〜|
 |8|[**ベイズ線形回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_4_Bayesian_Linear_Regression.ipynb)|334ページ〜|
 |8|[**二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_5_Binomial_Logistic_Regression.ipynb)|350ページ〜|
-|8|[**ランダム効果を含む二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_5_Random_Binomial_Logistic_Regression.ipynb)|369ページ〜|
-|9|[**各種前処理**]()|379ページ〜|
-|9|[**評価指標の算出(ラベルの予測精度)**]()|397ページ〜|
-|9|[**評価指標の算出(統計モデル選択の妥当性)**]()|404ページ〜|
-|9|[**評価指標の算出(ベイズ統計モデリング)**]()|411ページ〜|
-|9|[**交差検証**]()|413ページ〜|
+|8|[**ランダム効果を含む二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch8_7_Random_Binomial_Logisitic_Regression.ipynb)|369ページ〜|
+|9|[**各種前処理**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_2_Preprocessing.ipynb)|379ページ〜|
+|9|[**評価指標の算出(ラベルの予測精度)**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_3_Classification_Metrics.ipynb)|397ページ〜|
+|9|[**評価指標の算出(統計モデル選択の妥当性)**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_3_Statistical_Model_Metrics.ipynb)|404ページ〜|
+|9|[**交差検証**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch9_3_Cross_Varidation.ipynb)|413ページ〜|
 
 付録（本文中で解説していないコード）
 
@@ -229,8 +228,10 @@ flowchart LR;
 |5|[**二項ベータ分布モデル（過分散付き二項分布）**]()|201,315,366ページ|
 |5|[**負の二項分布モデル（過分散付きポアソン分布）**]()|201,315,366ページ|
 |6|[**OC-SVM**]()|252ページ|
+|7|[**最尤推定による二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch7_Binomial_Logisitc_Regression_Maxlikelihood.ipynb)|-|
+|7|[**最尤推定によるポアソン回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch7_Poisson_Regression_Maxlikelihood.ipynb)|-|
 |7|[**ガウス過程回帰**]()|-|
-|8|[**ポアソン回帰モデル**]()|361ページ|
+|8|[**ポアソン回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch8_6_Poisson_Regression.ipynb)|361ページ|
 |8|[**グループ差を含むGLMM**]()|384ページ|
 
 ## 付録解説
@@ -240,9 +241,9 @@ flowchart LR;
 |関連する章|解説内容とリンク|関連する書籍中のページ|
 |---|---|---|
 |4章|[**ホテリング理論の異常度が従う確率分布の求め方**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/4_Normal_Distribution_Formula_List.md)|170,188ページ|
-|6章|[**多次元正規分布の幾何的な意味**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_Multivariate_Normal_Shape.md)|228ページ|
-|6章|[**多次元正規分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_Multivariate_Normal_Maximum_Likelihood.md)|231ページ|
-|6章|[**EMアルゴリズムとGMM**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_GMM_EM_Algorithm.md)|245ページ|
+|6章|[**多次元正規分布の幾何的な意味**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_2_Multivariate_Normal_Shape.md)|228ページ|
+|6章|[**多次元正規分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_2_Multivariate_Normal_Maximum_Likelihood.md)|231ページ|
+|6章|[**EMアルゴリズムとGMM**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/6_5_GMM_EM_Algorithm.md)|245ページ|
 |7章|[**1変数線形回帰モデルの最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/7_Simple_Linear_Maximum_Likelihood.md)|277ページ|
 |7章|[**多変数線形回帰モデルの最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/7_Multiple_Linear_Maximum_Likelihood.md)|286ページ|
 |5,8章|[**ベータ二項分布モデル（過分散付き二項分布）による異常検知**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/appendix_notes/8_Beta_Binomial.md)|201,315,366ページ|
@@ -264,11 +265,13 @@ flowchart LR;
 |6|233|$\mathcal{F}(N,N-M)$|$\mathcal{F}(M,N-M)$|
 |7|276|コード7.5 箱ひげ図を用いたカテゴリ変数による分布形状の変化の可視化|コード7.5 箱ひげ図と単回帰直線による入出力があるデータの可視化|
 |7|281|式（7.28）の分母|式（7.19）の分母|
+|7|291|コード7.12 19行目`学習データの説明変数`|`推論データの説明変数`|
 |8|335|[6]https://www.pymc.io/projects/docs/en/stable/learn/core\_notebooks/pymc\_pytensor.html|[6]https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_pytensor.html|
 |8|354|年齢$x$に対する切片|年齢$x$に対する傾き|
 |8|356|コード8.19 5行目`x_train`|`x_inference`|
 |8|356|コード8.19 6行目`x_inference`|`y_inference`|
 |9|382|図9.1 Forward法「評価指標または有意性が最大となった変数をモデルに追加」|「評価指標が最良または有意性が最も低くなった変数をモデルに追加」|
 |9|382|図9.1 Backward法「評価指標または有意性が最小となった変数をモデルから除外」|「評価指標が最良または有意性が最も低くなった変数をモデルから除外」|
+|9|418|コード9.24 交差検証用データ読み込み|コード9.24 Stratified K-Foldによる交差検証の実装|
 
 本ページに掲載されていない誤植などの間違いを見つけられた方は、本ページのIssuesまでお知らせください。
