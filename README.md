@@ -258,10 +258,13 @@ flowchart LR;
 |2|97|注意点として、このクラスは入力データに欠測値があると動作しないので、事前に9章で紹介する方法で欠測データを除去または補完する必要があります。また|（削除）|
 |2|100|コード2.23 2〜5章で使用するサンプルデータの作成|コード2.23 2〜6章で使用するサンプルデータの作成|
 |2|100|コード2.23 42行目`df_anom_train, df_anom_inference = df_normal[:20], df_normal[20:]`|`df_anom_train, df_anom_inference = df_anomaly[:20], df_anomaly[20:]`|
+|4|150|$Ga(x\mid\theta,k)$または$Ga(\theta,k)$|$Ga(x\mid k,\theta)$または$Ga(k,\theta)$|
 |4|155|コード4.6 二項分布の確率密度関数|コード4.6 二項分布の確率質量関数|
 |4|155|コード4.7 ポアソン分布の確率密度関数|コード4.7 ポアソン分布の確率質量関数|
 |4|169|# データのヒストグラムと最尤推定した正規分布を重ねて表示|# データのヒストグラムと最尤推定したカイ二乗分布を重ねて表示|
 |4|173|quantile–quantil plot|quantile–quantile plot|
+|5|207|（二項分布の学習データに生成した人工データを使用）|（人工データの生成は不要です。[こちら](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_3_Binomial_Anomaly_Detection.ipynb)参照）|
+|5|213|（ポアソン分布の学習データに生成した人工データを使用）|（人工データの生成は不要です。[こちら](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_4_Poisson_Anomaly_Detection.ipynb)参照）|
 |6|233|$\mathcal{F}(N,N-M)$|$\mathcal{F}(M,N-M)$|
 |7|276|コード7.5 箱ひげ図を用いたカテゴリ変数による分布形状の変化の可視化|コード7.5 箱ひげ図と単回帰直線による入出力があるデータの可視化|
 |7|281|式（7.28）の分母|式（7.19）の分母|
