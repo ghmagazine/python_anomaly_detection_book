@@ -192,19 +192,19 @@ flowchart LR;
 
 本文中で解説したソースコードの一覧を以下の表に記載しています。[使用方法はこちらを参照してください](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/README.md)
 
-|章|手法名とソースコードへのリンク|書籍中のページ|
-|---|---|---|
-|2|[**データの可視化とEDA**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch2_3%264_EDA.ipynb)|75ページ〜|
-|2|[**教師なし学習向けデータセット生成**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch2_5_Create_Dataset.ipynb)|98ページ〜|
-|3|[**SVM**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch3_3_SVM.ipynb)|110ページ〜|
-|3|[**ロジスティック回帰**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch3_4_Logistic_Regression.ipynb)|120ページ〜|
-|4|[**Pythonによる確率分布の実装**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_3_Probability_Distribution.ipynb)|153ページ〜|
-|4|[**1変数のホテリング理論**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_4%265_Hotelling_Anomaly_Detection.ipynb)|172ページ〜|
-|4|[**1次元非正規分布**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_6_Non-Normal_Anomaly_Detection.ipynb)|195ページ〜|
-|5|[**二項分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_3_Binomial_Anomaly_Detection.ipynb)|206ページ〜|
-|5|[**ポアソン分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_4_Poisson_Anomaly_Detection.ipynb)|213ページ〜|
-|6|[**多変数のホテリング理論**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_3_Multivariate_Hotteling.ipynb)|234ページ〜|
-|6|[**マハラノビス・タグチ法**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_4_Mahalanobis_Taguchi.ipynb)|240ページ〜|
+|章|手法名とソースコードへのリンク|Google Colab|書籍中のページ|
+|---|---|---|---|
+|2|[**データの可視化とEDA**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch2_3%264_EDA.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch2_3%264_EDA.ipynb)|75ページ〜|
+|2|[**教師なし学習向けデータセット生成**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch2_5_Create_Dataset.ipynb)||98ページ〜|
+|3|[**SVM**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch3_3_SVM.ipynb)||110ページ〜|
+|3|[**ロジスティック回帰**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch3_4_Logistic_Regression.ipynb)||120ページ〜|
+|4|[**Pythonによる確率分布の実装**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_3_Probability_Distribution.ipynb)||153ページ〜|
+|4|[**1変数のホテリング理論**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_4%265_Hotelling_Anomaly_Detection.ipynb)||172ページ〜|
+|4|[**1次元非正規分布**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_6_Non-Normal_Anomaly_Detection.ipynb)||195ページ〜|
+|5|[**二項分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_3_Binomial_Anomaly_Detection.ipynb)||206ページ〜|
+|5|[**ポアソン分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_4_Poisson_Anomaly_Detection.ipynb)||213ページ〜|
+|6|[**多変数のホテリング理論**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_3_Multivariate_Hotteling.ipynb)||234ページ〜|
+|6|[**マハラノビス・タグチ法**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_4_Mahalanobis_Taguchi.ipynb)||240ページ〜|
 |6|[**混合正規分布モデル（GMM）**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_5_GMM_Anomaly_Detection.ipynb)|246ページ〜|
 |6|[**k-NN**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_6_kNN_Anomaly_Detection.ipynb)|254ページ〜|
 |7|[**統計モデリング向けデータセット生成**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch7_2_Create_Dataset.ipynb)|265ページ〜|
@@ -223,16 +223,16 @@ flowchart LR;
 
 付録（本文中で解説していないコード）
 
-|関連する章|手法名とソースコードへのリンク|関連する書籍中のページ|
+|関連する章|手法名とソースコードへのリンク|Google Colab|関連する書籍中のページ|
 |---|---|---|
-|5|[**二項ベータ分布モデル（過分散付き二項分布）**]()|201,315,366ページ|
-|5|[**負の二項分布モデル（過分散付きポアソン分布）**]()|201,315,366ページ|
-|6|[**OC-SVM**]()|252ページ|
-|7|[**最尤推定による二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch7_Binomial_Logisitc_Regression_Maxlikelihood.ipynb)|-|
-|7|[**最尤推定によるポアソン回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch7_Poisson_Regression_Maxlikelihood.ipynb)|-|
-|7|[**ガウス過程回帰**]()|-|
-|8|[**ポアソン回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch8_6_Poisson_Regression.ipynb)|361ページ|
-|8|[**グループ差を含むGLMM**]()|384ページ|
+|5|[**過分散のある二項分布（二項ベータ分布モデル）**]()||201,315,366ページ|
+|5|[**過分散のあるポアソン分布（負の二項分布モデル）**]()||201,315,366ページ|
+|6|[**OC-SVM**]()||252ページ|
+|7|[**最尤推定による二項ロジスティック回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch7_Binomial_Logisitc_Regression_Maxlikelihood.ipynb)||-|
+|7|[**最尤推定によるポアソン回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch7_Poisson_Regression_Maxlikelihood.ipynb)||-|
+|7|[**ガウス過程回帰**]()||-|
+|8|[**ポアソン回帰モデル**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/appendix/ch8_6_Poisson_Regression.ipynb)||361ページ|
+|8|[**グループ差を含むGLMM**]()||384ページ|
 
 ## 付録解説
 
