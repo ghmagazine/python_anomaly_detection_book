@@ -10,32 +10,40 @@
 \tag{7.11}
 ```
 
-は、$w_1,w_0,\sigma$をパラメータとして持ちます。これらのパラメータの最尤推定値が、
+は、 $w_1,w_0,\sigma$ をパラメータとして持ちます。これらのパラメータの最尤推定値が、
 
 ```math
+\begin{aligned}
 \hat{w}_1 = \frac{\hat{\sigma}_{xy}^2}{\hat{\sigma}_x^2}
+\end{aligned}
 \tag{7.17}
 ```
 
 ```math
+\begin{aligned}
 \hat{w}_0 = \bar{y} - \hat{w}_1\bar{x}
+\end{aligned}
 \tag{7.18}
 ```
 
 ```math
+\begin{aligned}
 \hat{\sigma}^2 = \frac{1}{N} \sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{w}_1(x^{(i)}-\bar{x})\bigr)^2
+\end{aligned}
 \tag{7.19}
 ```
 　
 となることを示していきます。
-　なお、$\bar{x}$、$\bar{y}$は$x$、$y$の標本平均
+　なお、 $\bar{x}$ 、 $\bar{y}$ は $x$ 、 $y$ の標本平均
 
 ```math
+\begin{aligned}
 \bar{x}=\frac{1}{N}\sum_{i=1}^N x^{(i)}, \quad \bar{y}=\frac{1}{N}\sum_{i=1}^N y^{(i)}
+\end{aligned}
 \tag{7.20}
 ```
 
-で、$\hat{\sigma}_x^2$は$x$の標本分散、$\hat{\sigma}_{xy}^2$は$x$と$y$の標本共分散
+で、 $\hat{\sigma}_x^2$ は $x$ の標本分散、 $\hat{\sigma}_{xy}^2$ は $x$ と $y$ の標本共分散
 
 ```math
 \begin{aligned}
@@ -75,15 +83,17 @@
 ただし
 
 ```math
+\begin{aligned}
 E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)=\frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}-(w_1x^{(i)}+w_0)\bigr)^2
+\end{aligned}
 \tag{7.15}
 ```
 
-この対数尤度$\log L(\boldsymbol{y} \mid \boldsymbol{X}, w_1, w_0, \sigma^2)$を$w_1,w_0$および$\sigma^2$に関してそれぞれ微分して0とおき、$w_1,w_0,\sigma^2$の極大値を計算することで、最尤推定値$\hat{w}_1,\hat{w}_0,\hat{\sigma}^2$を求めます。
+この対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X}, w_1, w_0, \sigma^2)$ を $w_1,w_0$ および $\sigma^2$ に関してそれぞれ微分して0とおき、 $w_1,w_0,\sigma^2$ の極大値を計算することで、最尤推定値 $\hat{w}_1,\hat{w}_0,\hat{\sigma}^2$ を求めます。
 
-### 線形予測子の係数$w_1$と切片$w_0$の最尤推定値
+### 線形予測子の係数 $w_1$ と切片 $w_0$ の最尤推定値
 
-　式 (7.14)の対数尤度$\log L(\boldsymbol{y} \mid \boldsymbol{X}, w_1, w_0, \sigma^2)$を、$w_0$に関して微分して0とおきます。
+　式 (7.14)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X}, w_1, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -130,15 +140,17 @@ E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)
 \tag{7.104}
 ```
 
-　ただし、$\tilde{x}^{(i)}$、$\tilde{y}^{(i)}$は$x^{(i)}$、$y^{(i)}$を中心化した
+　ただし、 $\tilde{x}^{(i)}$ 、 $\tilde{y}^{(i)}$ は $x^{(i)}$ 、 $y^{(i)}$ を中心化した
 
 ```math
+\begin{aligned}
 \tilde{x}^{(i)}=x^{(i)}-\bar{x}, \quad \tilde{y}^{(i)}=y^{(i)}-\bar{y}
+\end{aligned}
 \tag{7.105}
 ```
 
 　となります。
-　次に式 (7.14)の対数尤度$\log L(\boldsymbol{y} \mid w_1, w_0, \sigma^2)$を、$w_1$に関して微分して0とおきます。
+　次に式 (7.14)の対数尤度 $\log L(\boldsymbol{y} \mid w_1, w_0, \sigma^2)$ を、 $w_1$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -180,26 +192,30 @@ w_1
 \tag{7.108}
 ```
 
-　よって$w_1$の最尤推定量$\hat{w}_1$は、
+　よって $w_1$ の最尤推定量 $\hat{w}_1$ は、
 
 ```math
+\begin{aligned}
 \hat{w}_1 = \frac{\hat{\sigma}_{xy}^2}{\hat{\sigma}_x^2}
+\end{aligned}
 \tag{7.109}
 ```
 　
 　と表せます。
-　この$\hat{w}_1$を式 (7.102)の$w_1$と置き換えると、$w_0$の最尤推定量$\hat{w}_0$は、
+　この $\hat{w}_1$ を式 (7.102)の $w_1$ と置き換えると、 $w_0$ の最尤推定量 $\hat{w}_0$ は、
 
 ```math
+\begin{aligned}
 \hat{w}_0 = \bar{y} - \hat{w}_1\bar{x}
+\end{aligned}
 \tag{7.110}
 ```
 　
 　のように表せます。
 
-#### 分散パラメータ$\sigma^2$の最尤推定値
+#### 分散パラメータ $\sigma^2$ の最尤推定値
 
-　式 (7.14)の対数尤度$\log L(\boldsymbol{y} \mid w_1, w_0, \sigma^2)$を、$w_0$に関して微分して0とおきます。
+　式 (7.14)の対数尤度 $\log L(\boldsymbol{y} \mid w_1, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -214,33 +230,41 @@ w_1
 \tag{7.111}
 ```
 
-ここで、式 (7.104)の$w_1$を最尤推定値$\hat{w}_1$に置き換えると、二乗和誤差関数$E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)$の最尤推定値は
+ここで、式 (7.104)の $w_1$ を最尤推定値 $\hat{w}_1$ に置き換えると、二乗和誤差関数 $E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)$ の最尤推定値は
 
 ```math
+\begin{aligned}
 E_D(\hat{w}_1)=\frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{w}_1(x^{(i)}-\bar{x})\bigr)^2
+\end{aligned}
 \tag{7.112}
 ```
 　
-　これを式 (7.111)の$E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)$に代入すると、
+　これを式 (7.111)の $E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)$ に代入すると、
 
 ```math
+\begin{aligned}
 =\frac{1}{2\sigma^4} \Bigl(\sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{w}_1(x^{(i)}-\bar{x})\bigr)^2 - \sigma^2N \Bigr)
+\end{aligned}
 \tag{7.113}
 ```
 
 　変形して
 
 ```math
+\begin{aligned}
 \sigma^2
 =
 \frac{1}{N} \sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{w}_1(x^{(i)}-\bar{x})\bigr)^2
+\end{aligned}
 \tag{7.114}
 ```
 
-　よって$\sigma^2$の最尤推定量$\hat{\sigma}^2$は、
+　よって $\sigma^2$ の最尤推定量 $\hat{\sigma}^2$ は、
 
 ```math
+\begin{aligned}
 \hat{\sigma}^2 = \frac{1}{N} \sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{w}_1(x^{(i)}-\bar{x})\bigr)^2
+\end{aligned}
 \tag{7.115}
 ```
 　
