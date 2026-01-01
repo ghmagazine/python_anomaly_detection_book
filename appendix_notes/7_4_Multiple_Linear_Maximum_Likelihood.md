@@ -10,32 +10,40 @@
 \tag{7.25}
 ```
 
-は、$\boldsymbol{w},w_0,\sigma$をパラメータとして持ちます。これらのパラメータの最尤推定値が、
+は、 $\boldsymbol{w},w_0,\sigma$ をパラメータとして持ちます。これらのパラメータの最尤推定値が、
 
 ```math
+\begin{aligned}
 \hat{\boldsymbol{w}} = \bigl(\tilde{\boldsymbol{X}}\tilde{\boldsymbol{X}}^T\bigr)^{-1}\tilde{\boldsymbol{X}}\tilde{\boldsymbol{y}}
+\end{aligned}
 \tag{7.28}
 ```
 
 ```math
+\begin{aligned}
 \hat{w}_0 = \bar{y} - \hat{\boldsymbol{w}}^T\bar{\boldsymbol{x}}
+\end{aligned}
 \tag{7.29}
 ```
 
 ```math
+\begin{aligned}
 \hat{\sigma}^2 = \frac{1}{N} \sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{\boldsymbol{w}}^T(\boldsymbol{x}^{(i)}-\bar{\boldsymbol{x}})\bigr)^2
+\end{aligned}
 \tag{7.30}
 ```
 
 となることを示していきます。
-　なお、$\bar{\boldsymbol{x}}$、$\bar{y}$は$\boldsymbol{x}$の標本平均ベクトルと$y$の標本平均
+　なお、 $\bar{\boldsymbol{x}}$ 、 $\bar{y}$ は $\boldsymbol{x}$ の標本平均ベクトルと $y$ の標本平均
 
 ```math
+\begin{aligned}
 \bar{\boldsymbol{x}}=\frac{1}{N}\sum_{i=1}^N \boldsymbol{x}^{(i)}, \quad \bar{y}=\frac{1}{N}\sum_{i=1}^N y^{(i)}
+\end{aligned}
 \tag{7.37}
 ```
 
-で、$\tilde{\boldsymbol{X}}$、$\tilde{\boldsymbol{y}}$は各データ$\boldsymbol{x}^{(i)}$、$y^{(i)}$を中心化して全データをまとめた行列、ベクトル
+で、 $\tilde{\boldsymbol{X}}$ 、 $\tilde{\boldsymbol{y}}$ は各データ $\boldsymbol{x}^{(i)}$ 、 $y^{(i)}$ を中心化して全データをまとめた行列、ベクトル
 
 ```math
 \begin{aligned}
@@ -79,15 +87,17 @@ x_M^{(1)}-\bar{x}_M & \cdots & x_M^{(N)}-\bar{x}_M \end{pmatrix} \\
 ただし
 
 ```math
+\begin{aligned}
 E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)=\frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}-(\boldsymbol{w}^T\boldsymbol{x}^{(i)}+w_0)\bigr)^2
+\end{aligned}
 \tag{7.27}
 ```
 
-この対数尤度$\log L(\boldsymbol{y} \mid \boldsymbol{X}, \boldsymbol{w}, w_0, \sigma^2)$を$\boldsymbol{w},w_0$および$\sigma^2$に関してそれぞれ微分して0とおき、$\boldsymbol{w},w_0,\sigma^2$の極大値を計算することで、最尤推定値$\hat{\boldsymbol{w}},\hat{w}_0,\hat{\sigma}^2$を求めます。
+この対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X}, \boldsymbol{w}, w_0, \sigma^2)$ を $\boldsymbol{w},w_0$ および $\sigma^2$ に関してそれぞれ微分して0とおき、 $\boldsymbol{w},w_0,\sigma^2$ の極大値を計算することで、最尤推定値 $\hat{\boldsymbol{w}},\hat{w}_0,\hat{\sigma}^2$ を求めます。
 
-##### 線形予測子の係数$w_1$と切片$w_0$の最尤推定値
+##### 線形予測子の係数 $w_1$ と切片 $w_0$ の最尤推定値
 
-　式 (7.26)の対数尤度$\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$を、$w_0$に関して微分して0とおきます。
+　式 (7.26)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -133,7 +143,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \tag{7.203}
 ```
 
-　ここで、以下のように$\boldsymbol{x}^{(i)}$、$y^{(i)}$を中心化して全データまとめて表記します。
+　ここで、以下のように $\boldsymbol{x}^{(i)}$ 、 $y^{(i)}$ を中心化して全データまとめて表記します。
 
 ```math
 \begin{aligned}
@@ -181,7 +191,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 　
 　となります。
 
-　次に式 (7.26)の対数尤度$\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$を、$\boldsymbol{w}$に関して微分して0とおきます。
+　次に式 (7.26)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$ を、 $\boldsymbol{w}$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -208,7 +218,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \tag{7.208}
 ```
 　
-　$\tilde{\boldsymbol{X}}\tilde{\boldsymbol{X}}^T$は対称行列になるので、対称行列$\boldsymbol{A}$に対する二次形式の微分の公式$\frac{\partial}{\partial \boldsymbol{x}} \boldsymbol{x}^T\boldsymbol{A}\boldsymbol{x}=2\boldsymbol{A}\boldsymbol{x}$と、ベクトルの微分公式$\frac{\partial}{\partial \boldsymbol{a}}\boldsymbol{a}^T\boldsymbol{b}=\boldsymbol{b}$を適用して、
+　$\tilde{\boldsymbol{X}}\tilde{\boldsymbol{X}}^T$ は対称行列になるので、対称行列 $\boldsymbol{A}$ に対する二次形式の微分の公式 $\frac{\partial}{\partial \boldsymbol{x}} \boldsymbol{x}^T\boldsymbol{A}\boldsymbol{x}=2\boldsymbol{A}\boldsymbol{x}$ と、ベクトルの微分公式 $\frac{\partial}{\partial \boldsymbol{a}}\boldsymbol{a}^T\boldsymbol{b}=\boldsymbol{b}$ を適用して、
 
 ```math
 \begin{aligned}
@@ -234,26 +244,30 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \tag{7.210}
 ```
 
-　よって$\boldsymbol{w}$の最尤推定量$\hat{\boldsymbol{w}}$は、
+　よって $\boldsymbol{w}$ の最尤推定量 $\hat{\boldsymbol{w}}$ は、
 
 ```math
+\begin{aligned}
 \hat{\boldsymbol{w}} = \bigl(\tilde{\boldsymbol{X}}\tilde{\boldsymbol{X}}^T\bigr)^{-1}\tilde{\boldsymbol{X}}\tilde{\boldsymbol{y}}
+\end{aligned}
 \tag{7.211}
 ```
 　
 　と表せます。
-　これを式 (7.202)に代入すると、$w_0$の最尤推定量$\hat{w}_0$は、
+　これを式 (7.202)に代入すると、 $w_0$ の最尤推定量 $\hat{w}_0$ は、
 
 ```math
+\begin{aligned}
 \hat{w}_0 = \bar{y} - \hat{\boldsymbol{w}}^T\bar{\boldsymbol{x}}
+\end{aligned}
 \tag{7.212}
 ```
 　
 　のように表せます。
 
-##### 分散パラメータ$\sigma^2$の最尤推定値
+##### 分散パラメータ $\sigma^2$ の最尤推定値
 
-　式 (7.26)の対数尤度$\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$を、$w_0$に関して微分して0とおきます。
+　式 (7.26)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -268,35 +282,43 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \tag{7.213}
 ```
 
-ここで、式 (7.203)の$\boldsymbol{w}$を最尤推定値$\hat{\boldsymbol{w}}$に置き換えると、二乗和誤差関数$E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)$の最尤推定値は
+ここで、式 (7.203)の $\boldsymbol{w}$ を最尤推定値 $\hat{\boldsymbol{w}}$ に置き換えると、二乗和誤差関数 $E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)$ の最尤推定値は
 
 ```math
+\begin{aligned}
 E_D(\hat{\boldsymbol{w}})
 =
 \frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{\boldsymbol{w}}^T(\boldsymbol{x}^{(i)}-\bar{\boldsymbol{x}})\bigr)^2
+\end{aligned}
 \tag{7.214}
 ```
 
-　これを式 (7.213)の$E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)$に代入すると、
+　これを式 (7.213)の $E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)$ に代入すると、
 
 ```math
+\begin{aligned}
 =\frac{1}{2\sigma^4} \Bigl(\sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{\boldsymbol{w}}^T(\boldsymbol{x}^{(i)}-\bar{\boldsymbol{x}})\bigr)^2 - \sigma^2N \Bigr)
+\end{aligned}
 \tag{7.215}
 ```
 
-　$\sigma^2>0$も考慮して変形すると、
+　$\sigma^2>0$ も考慮して変形すると、
 
 ```math
+\begin{aligned}
 \sigma^2
 =
 \frac{1}{N} \sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{\boldsymbol{w}}^T(\boldsymbol{x}^{(i)}-\bar{\boldsymbol{x}})\bigr)^2
+\end{aligned}
 \tag{7.217}
 ```
 
-　よって$\sigma^2$の最尤推定量$\hat{\sigma}^2$は、
+　よって $\sigma^2$ の最尤推定量 $\hat{\sigma}^2$ は、
 
 ```math
+\begin{aligned}
 \hat{\sigma}^2 = \frac{1}{N} \sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{\boldsymbol{w}}^T(\boldsymbol{x}^{(i)}-\bar{\boldsymbol{x}})\bigr)^2
+\end{aligned}
 \tag{7.218}
 ```
 　
