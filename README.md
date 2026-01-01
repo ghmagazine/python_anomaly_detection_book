@@ -269,6 +269,7 @@ flowchart LR;
 |7|276|コード7.5 箱ひげ図を用いたカテゴリ変数による分布形状の変化の可視化|コード7.5 箱ひげ図と単回帰直線による入出力があるデータの可視化|
 |7|281|式（7.28）の分母|式（7.19）の分母|
 |7|291|コード7.12 19行目`学習データの説明変数`|`推論データの説明変数`|
+|7|304|コード7.17 13行目`学習データの説明変数`|`推論データの説明変数`|
 |8|335|[6]https://www.pymc.io/projects/docs/en/stable/learn/core\_notebooks/pymc\_pytensor.html|[6]https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_pytensor.html|
 |8|354|年齢$x$に対する切片|年齢$x$に対する傾き|
 |8|356|コード8.19 5行目`x_train`|`x_inference`|
