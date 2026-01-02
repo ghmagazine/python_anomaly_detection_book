@@ -34,7 +34,8 @@
 ```
 　
 となることを示していきます。
-　なお、 $\bar{x}$ 、 $\bar{y}$ は $x$ 、 $y$ の標本平均
+
+なお、 $\bar{x}$ 、 $\bar{y}$ は $x$ 、 $y$ の標本平均
 
 ```math
 \begin{aligned}
@@ -43,7 +44,7 @@
 \tag{7.20}
 ```
 
-で、 $\hat{\sigma}_x^2$ は $x$ の標本分散、 $\hat{\sigma}_{xy}^2$ は $x$ と $y$ の標本共分散
+で、 ${\hat{\sigma}}_{x}^2$ は $x$ の標本分散、 ${\hat{\sigma}}_{xy}^2$ は $x$ と $y$ の標本共分散
 
 ```math
 \begin{aligned}
@@ -93,7 +94,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)=\frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}
 
 ### 線形予測子の係数 $w_1$ と切片 $w_0$ の最尤推定値
 
-　式 (7.14)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X}, w_1, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
+式 (7.14)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X}, w_1, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -112,7 +113,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)=\frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}
 \tag{7.101}
 ```
 　
-　変形して
+変形して
 
 ```math
 \begin{aligned}
@@ -125,7 +126,7 @@ w_0
 \tag{7.102}
 ```
 
-　式 (7.102)を式 (7.15)に代入すると、
+式 (7.102)を式 (7.15)に代入すると、
 
 ```math
 \begin{aligned}
@@ -149,8 +150,9 @@ E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)
 \tag{7.105}
 ```
 
-　となります。
-　次に式 (7.14)の対数尤度 $\log L(\boldsymbol{y} \mid w_1, w_0, \sigma^2)$ を、 $w_1$ に関して微分して0とおきます。
+となります。
+
+次に式 (7.14)の対数尤度 $\log L(\boldsymbol{y} \mid w_1, w_0, \sigma^2)$ を、 $w_1$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -163,7 +165,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)
 \tag{7.106}
 ```
 　
-　式 (7.104)を代入して
+式 (7.104)を代入して
 
 ```math
 \begin{aligned}
@@ -201,8 +203,8 @@ w_1
 \tag{7.109}
 ```
 　
-　と表せます。
-　この $\hat{w}_1$ を式 (7.102)の $w_1$ と置き換えると、 $w_0$ の最尤推定量 $\hat{w}_0$ は、
+と表せます。
+この $\hat{w}_1$ を式 (7.102)の $w_1$ と置き換えると、 $w_0$ の最尤推定量 $\hat{w}_0$ は、
 
 ```math
 \begin{aligned}
@@ -239,7 +241,7 @@ E_D(\hat{w}_1)=\frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{w}_1(x^{(i)}
 \tag{7.112}
 ```
 　
-　これを式 (7.111)の $E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)$ に代入すると、
+これを式 (7.111)の $E_D(\boldsymbol{X},\boldsymbol{y},w_1,w_0)$ に代入すると、
 
 ```math
 \begin{aligned}
@@ -248,7 +250,7 @@ E_D(\hat{w}_1)=\frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{w}_1(x^{(i)}
 \tag{7.113}
 ```
 
-　変形して
+変形して
 
 ```math
 \begin{aligned}
@@ -259,7 +261,7 @@ E_D(\hat{w}_1)=\frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{w}_1(x^{(i)}
 \tag{7.114}
 ```
 
-　よって $\sigma^2$ の最尤推定量 $\hat{\sigma}^2$ は、
+よって $\sigma^2$ の最尤推定量 $\hat{\sigma}^2$ は、
 
 ```math
 \begin{aligned}
@@ -268,4 +270,4 @@ E_D(\hat{w}_1)=\frac{1}{2}\sum_{i=1}^N \bigl(y^{(i)}-\bar{y} - \hat{w}_1(x^{(i)}
 \tag{7.115}
 ```
 　
-　と表せます。
+と表せます。

@@ -9,9 +9,9 @@
 |項目|概要|
 |---|---|
 |[**異常検知アルゴリズム チートシート**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main#異常検知アルゴリズム-チートシート)|書籍に記載した手法から適切なものを選ぶためのフローチャート|
-|[**ソースコード**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main#ソースコード)|書籍中のソースコード（Jupyter形式）|
-|[**付録解説**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main#付録解説)|書面に掲載されていない、各種理論やアルゴリズムに関する補足解説|
-|[**正誤表**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main#正誤表)|書籍の正誤表|
+|[**ソースコード**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main?tab=readme-ov-file#%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89)|書籍中のソースコード（Jupyter形式）|
+|[**付録解説**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main?tab=readme-ov-file#%E4%BB%98%E9%8C%B2%E8%A7%A3%E8%AA%AC)|書面に掲載されていない、各種理論やアルゴリズムに関する補足解説|
+|[**正誤表**](https://github.com/ghmagazine/python_anomaly_detection_book/tree/main?tab=readme-ov-file#%E6%AD%A3%E8%AA%A4%E8%A1%A8)|書籍の正誤表|
 
 ## 異常検知アルゴリズム チートシート
 
@@ -203,7 +203,7 @@ flowchart LR;
 |4|[**1次元非正規分布**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_6_Non-Normal_Anomaly_Detection.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch4_6_Non-Normal_Anomaly_Detection.ipynb)|195ページ〜|
 |5|[**二項分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_3_Binomial_Anomaly_Detection.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_3_Binomial_Anomaly_Detection.ipynb)|206ページ〜|
 |5|[**ポアソン分布の最尤推定**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_4_Poisson_Anomaly_Detection.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch5_4_Poisson_Anomaly_Detection.ipynb)|213ページ〜|
-|6|[**多変数のホテリング理論**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_3_Multivariate_Hotteling.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_3_Multivariate_Hotteling.ipynb)|234ページ〜|
+|6|[**多変数のホテリング理論**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_3_Multivariate_Hotelling.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_3_Multivariate_Hotelling.ipynb)|234ページ〜|
 |6|[**マハラノビス・タグチ法**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_4_Mahalanobis_Taguchi.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_4_Mahalanobis_Taguchi.ipynb)|240ページ〜|
 |6|[**混合正規分布モデル（GMM）**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_5_GMM_Anomaly_Detection.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_5_GMM_Anomaly_Detection.ipynb)|246ページ〜|
 |6|[**k-NN**](https://github.com/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_6_kNN_Anomaly_Detection.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ghmagazine/python_anomaly_detection_book/blob/main/notebooks/ch6_6_kNN_Anomaly_Detection.ipynb)|254ページ〜|
@@ -236,7 +236,7 @@ flowchart LR;
 
 ## 付録解説
 
-**※数式が表示されないため、GitHub Pagesに移行予定**
+書面に掲載されていない、各種理論やアルゴリズムに関する補足解説をまとめています。書籍中で「詳細はサポートページを参照ください」と記載されている部分の解説が該当します。
 
 |関連する章|解説内容とリンク|関連する書籍中のページ|
 |---|---|---|
@@ -258,7 +258,7 @@ flowchart LR;
 |2|97|注意点として、このクラスは入力データに欠測値があると動作しないので、事前に9章で紹介する方法で欠測データを除去または補完する必要があります。また|（削除）|
 |2|100|コード2.23 2〜5章で使用するサンプルデータの作成|コード2.23 2〜6章で使用するサンプルデータの作成|
 |2|100|コード2.23 42行目`df_anom_train, df_anom_inference = df_normal[:20], df_normal[20:]`|`df_anom_train, df_anom_inference = df_anomaly[:20], df_anomaly[20:]`|
-|4|150|$Ga(x\mid\theta,k)$または$Ga(\theta,k)$|$Ga(x\mid k,\theta)$または$Ga(k,\theta)$|
+|4|150|$Ga(x\mid\theta,k)$ または $Ga(\theta,k)$ |$Ga(x\mid k,\theta)$ または $Ga(k,\theta)$ |
 |4|155|コード4.6 二項分布の確率密度関数|コード4.6 二項分布の確率質量関数|
 |4|155|コード4.7 ポアソン分布の確率密度関数|コード4.7 ポアソン分布の確率質量関数|
 |4|169|# データのヒストグラムと最尤推定した正規分布を重ねて表示|# データのヒストグラムと最尤推定したカイ二乗分布を重ねて表示|
@@ -271,7 +271,7 @@ flowchart LR;
 |7|291|コード7.12 19行目`学習データの説明変数`|`推論データの説明変数`|
 |7|304|コード7.17 13行目`学習データの説明変数`|`推論データの説明変数`|
 |8|335|[6]https://www.pymc.io/projects/docs/en/stable/learn/core\_notebooks/pymc\_pytensor.html|[6]https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/pymc_pytensor.html|
-|8|354|年齢$x$に対する切片|年齢$x$に対する傾き|
+|8|354|年齢 $x$ に対する切片|年齢 $x$ に対する傾き|
 |8|356|コード8.19 5行目`x_train`|`x_inference`|
 |8|356|コード8.19 6行目`x_inference`|`y_inference`|
 |9|382|図9.1 Forward法「評価指標または有意性が最大となった変数をモデルに追加」|「評価指標が最良または有意性が最も低くなった変数をモデルに追加」|

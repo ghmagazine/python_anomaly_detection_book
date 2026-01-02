@@ -34,7 +34,8 @@
 ```
 
 となることを示していきます。
-　なお、 $\bar{\boldsymbol{x}}$ 、 $\bar{y}$ は $\boldsymbol{x}$ の標本平均ベクトルと $y$ の標本平均
+
+なお、 $\bar{\boldsymbol{x}}$ 、 $\bar{y}$ は $\boldsymbol{x}$ の標本平均ベクトルと $y$ の標本平均
 
 ```math
 \begin{aligned}
@@ -97,7 +98,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)=\frac{1}{2}\sum_{i=1}^N \b
 
 ##### 線形予測子の係数 $w_1$ と切片 $w_0$ の最尤推定値
 
-　式 (7.26)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
+式 (7.26)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -115,8 +116,8 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)=\frac{1}{2}\sum_{i=1}^N \b
 \end{aligned}
 \tag{7.201}
 ```
-　
-　変形して
+
+変形して
 
 ```math
 \begin{aligned}
@@ -128,8 +129,8 @@ w_0
 \end{aligned}
 \tag{7.202}
 ```
-　
-　となります。
+
+となります。
 これを式 (7.27)に代入すると、
 
 ```math
@@ -143,7 +144,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \tag{7.203}
 ```
 
-　ここで、以下のように $\boldsymbol{x}^{(i)}$ 、 $y^{(i)}$ を中心化して全データまとめて表記します。
+ここで、以下のように $\boldsymbol{x}^{(i)}$ 、 $y^{(i)}$ を中心化して全データまとめて表記します。
 
 ```math
 \begin{aligned}
@@ -160,8 +161,8 @@ x_{M}^{(1)}-\bar{x}_M & \cdots & x_{M}^{(N)}-\bar{x}_M \end{pmatrix} \\
 \end{aligned}
 \tag{7.204}
 ```
-　
-　このとき、
+
+このとき、
 
 ```math
 \begin{aligned}
@@ -171,8 +172,8 @@ x_{M}^{(1)}-\bar{x}_M & \cdots & x_{M}^{(N)}-\bar{x}_M \end{pmatrix} \\
 \end{aligned}
 \tag{7.205}
 ```
-　
-　より、式 (7.203)も考慮すると、
+
+より、式 (7.203)も考慮すると、
 
 ```math
 \begin{aligned}
@@ -188,10 +189,10 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \end{aligned}
 \tag{7.206}
 ```
-　
-　となります。
 
-　次に式 (7.26)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$ を、 $\boldsymbol{w}$ に関して微分して0とおきます。
+となります。
+
+次に式 (7.26)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$ を、 $\boldsymbol{w}$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -204,7 +205,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \tag{7.207}
 ```
 
-　式 (7.206)を代入して
+式 (7.206)を代入して
 
 ```math
 \begin{aligned}
@@ -217,8 +218,8 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \end{aligned}
 \tag{7.208}
 ```
-　
-　$\tilde{\boldsymbol{X}}\tilde{\boldsymbol{X}}^T$ は対称行列になるので、対称行列 $\boldsymbol{A}$ に対する二次形式の微分の公式 $\frac{\partial}{\partial \boldsymbol{x}} \boldsymbol{x}^T\boldsymbol{A}\boldsymbol{x}=2\boldsymbol{A}\boldsymbol{x}$ と、ベクトルの微分公式 $\frac{\partial}{\partial \boldsymbol{a}}\boldsymbol{a}^T\boldsymbol{b}=\boldsymbol{b}$ を適用して、
+
+$\tilde{\boldsymbol{X}}\tilde{\boldsymbol{X}}^T$ は対称行列になるので、対称行列 $\boldsymbol{A}$ に対する二次形式の微分の公式 $\frac{\partial}{\partial \boldsymbol{x}} \boldsymbol{x}^T\boldsymbol{A}\boldsymbol{x}=2\boldsymbol{A}\boldsymbol{x}$ と、ベクトルの微分公式 $\frac{\partial}{\partial \boldsymbol{a}}\boldsymbol{a}^T\boldsymbol{b}=\boldsymbol{b}$ を適用して、
 
 ```math
 \begin{aligned}
@@ -229,8 +230,8 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \end{aligned}
 \tag{7.209}
 ```
-　
-　変形して
+
+変形して
 
 ```math
 \begin{aligned}
@@ -244,7 +245,7 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \tag{7.210}
 ```
 
-　よって $\boldsymbol{w}$ の最尤推定量 $\hat{\boldsymbol{w}}$ は、
+よって $\boldsymbol{w}$ の最尤推定量 $\hat{\boldsymbol{w}}$ は、
 
 ```math
 \begin{aligned}
@@ -252,9 +253,9 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \end{aligned}
 \tag{7.211}
 ```
-　
-　と表せます。
-　これを式 (7.202)に代入すると、 $w_0$ の最尤推定量 $\hat{w}_0$ は、
+
+と表せます。
+これを式 (7.202)に代入すると、 $w_0$ の最尤推定量 $\hat{w}_0$ は、
 
 ```math
 \begin{aligned}
@@ -262,12 +263,12 @@ E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)
 \end{aligned}
 \tag{7.212}
 ```
-　
-　のように表せます。
+
+のように表せます。
 
 ##### 分散パラメータ $\sigma^2$ の最尤推定値
 
-　式 (7.26)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
+式 (7.26)の対数尤度 $\log L(\boldsymbol{y} \mid \boldsymbol{X},\boldsymbol{w}, w_0, \sigma^2)$ を、 $w_0$ に関して微分して0とおきます。
 
 ```math
 \begin{aligned}
@@ -293,7 +294,7 @@ E_D(\hat{\boldsymbol{w}})
 \tag{7.214}
 ```
 
-　これを式 (7.213)の $E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)$ に代入すると、
+これを式 (7.213)の $E_D(\boldsymbol{X},\boldsymbol{y},\boldsymbol{w},w_0)$ に代入すると、
 
 ```math
 \begin{aligned}
@@ -302,7 +303,7 @@ E_D(\hat{\boldsymbol{w}})
 \tag{7.215}
 ```
 
-　$\sigma^2>0$ も考慮して変形すると、
+$\sigma^2>0$ も考慮して変形すると、
 
 ```math
 \begin{aligned}
@@ -313,7 +314,7 @@ E_D(\hat{\boldsymbol{w}})
 \tag{7.217}
 ```
 
-　よって $\sigma^2$ の最尤推定量 $\hat{\sigma}^2$ は、
+よって $\sigma^2$ の最尤推定量 $\hat{\sigma}^2$ は、
 
 ```math
 \begin{aligned}
@@ -321,5 +322,5 @@ E_D(\hat{\boldsymbol{w}})
 \end{aligned}
 \tag{7.218}
 ```
-　
-　と表せます。
+
+と表せます。
