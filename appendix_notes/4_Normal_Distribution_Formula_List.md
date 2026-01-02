@@ -105,11 +105,11 @@ N\frac{\hat{\sigma}^2}{\sigma^2} \sim \chi^2(N-1)
 
 ##### 1. 分子の確率分布
 
-　分子 $(x-\hat{\mu})^2$ の確率分布を求めるためには、まず平方根である $x-\hat{\mu}$ の確率分布に着目します。
+分子 $(x-\hat{\mu})^2$ の確率分布を求めるためには、まず平方根である $x-\hat{\mu}$ の確率分布に着目します。
 
-　$x$ は正規分布 $\mathcal{N}(\mu,\sigma^2)$ に従い、標本平均 $\hat{\mu}$ は式 (4.102)より正規分布 $\mathcal{N}(\mu,\frac{\sigma^2}{N})$ に従います。
+$x$ は正規分布 $\mathcal{N}(\mu,\sigma^2)$ に従い、標本平均 $\hat{\mu}$ は式 (4.102)より正規分布 $\mathcal{N}(\mu,\frac{\sigma^2}{N})$ に従います。
 
-　$x-\hat{\mu}$ は両者の引き算となるので、式 (4.101)を適用すると、平均 $\mu-\mu=0$ 、分散 $\sigma^2+\frac{\sigma^2}{N}=\frac{N+1}{N}\sigma^2$ の正規分布に従い、以下のように表せます
+$x-\hat{\mu}$ は両者の引き算となるので、式 (4.101)を適用すると、平均 $\mu-\mu=0$ 、分散 $\sigma^2+\frac{\sigma^2}{N}=\frac{N+1}{N}\sigma^2$ の正規分布に従い、以下のように表せます
 
 ```math
 \begin{aligned}
