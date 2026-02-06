@@ -254,7 +254,7 @@ flowchart LR;
 |章|ページ|誤|正|
 |---|---|---|---|
 |1|48|true positive：真陰性|true negative：真陰性|
-|2|83|[5]https://kikakurui.com/z8/Z8101-1-2015-01.html|[5]https://numpy.org/doc/2.2/reference/generated/numpy.histogram_bin_edges.html#numpy.histogram_bin_edges|
+|2|83|[5]https://kikakurui.com/z8/Z8101-1-2015-01.html|[5]https://numpy.org/doc/2.2/reference/generated/<br>numpy.histogram_bin_edges.html#numpy.histogram_bin_edges|
 |2|97|注意点として、このクラスは入力データに欠測値があると動作しないので、事前に9章で紹介する方法で欠測データを除去または補完する必要があります。また|（削除）|
 |2|100|コード2.23 2〜5章で使用するサンプルデータの作成|コード2.23 2〜6章で使用するサンプルデータの作成|
 |2|100|コード2.23 42行目`df_anom_train, df_anom_inference`<br>`= df_normal[:20], df_normal[20:]`|`df_anom_train, df_anom_inference`<br>`= df_anomaly[:20], df_anomaly[20:]`|
